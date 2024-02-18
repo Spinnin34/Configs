@@ -1,0 +1,985 @@
+panels:
+  rankup_menu:
+    perm: default
+    commands-on-open:
+    - 'add-data= reward-id nothing'
+    - 'set-data= reward-id nothing'
+    rows: 6
+    title: '&fSurvival Menu &8| &fRankup'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '1':
+        material: GRAY_STAINED_GLASS_PANE
+        duplicate: 0,2,3,4,6,7,8,5,10,12,14,16,19,21,23,25,28,30,32,34,39,43
+        stack: 1
+        name: ' '
+      '49':
+        material: BARRIER
+        stack: 1
+        name: '#FFB900↓ #474747| &cClose'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - cpc
+        - sound= UI_BUTTON_CLICK
+      '17':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU1ZGJjNDllODE4OGRhMWI5MzYwNzJkNDViYzdjMTNiNDJhMGE0YzA2MjRiMjEwNThhYTNmNTI4Mzk1NWI4ZSJ9fX0=
+        stack: 1 #Emerald 3
+        name: '&2ᴇᴍᴇʀᴀʟᴅ &8III'
+        lore:
+        - ''
+        - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8III'
+        - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8I'
+        - ''
+        - '&7Cost: &6$110.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦250 &fPlayer Experience'
+        - ' &8- &b10 &fDiamond'
+        - ' &8- &316 &fLapis Lazuli'
+        - ''
+        commands:
+        - 'buycommand= 110000 console= rewards_emerald3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.emerald3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&2ᴇᴍᴇʀᴀʟᴅ &8III'
+          lore:
+          - ''
+          - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8III'
+          - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8I'
+          - ''
+          - '&7Cost: &6$110.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦250 &fPlayer Experience'
+          - ' &8- &b10 &fDiamond'
+          - ' &8- &316 &fLapis Lazuli'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '16':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU1ZGJjNDllODE4OGRhMWI5MzYwNzJkNDViYzdjMTNiNDJhMGE0YzA2MjRiMjEwNThhYTNmNTI4Mzk1NWI4ZSJ9fX0=
+        stack: 1 #Emerald 2
+        name: '&2ᴇᴍᴇʀᴀʟᴅ &8II'
+        lore:
+        - ''
+        - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8II'
+        - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8III'
+        - ''
+        - '&7Cost: &6$100.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦150 &fPlayer Experience'
+        - ''
+        commands:
+        - 'buycommand= 100000 console= rewards_emerald2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.emerald2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&2ᴇᴍᴇʀᴀʟᴅ &8II'
+          lore:
+          - ''
+          - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8II'
+          - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8III'
+          - ''
+          - '&7Cost: &6$100.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦150 &fPlayer Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '15':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU1ZGJjNDllODE4OGRhMWI5MzYwNzJkNDViYzdjMTNiNDJhMGE0YzA2MjRiMjEwNThhYTNmNTI4Mzk1NWI4ZSJ9fX0=
+        stack: 1 #Emerald 1
+        name: '&2ᴇᴍᴇʀᴀʟᴅ &8I'
+        lore:
+        - ''
+        - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8I'
+        - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8II'
+        - ''
+        - '&7Cost: &6$80.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &b[Pillager Axe]'
+        - ' &8- §x§f§f§f§f§0§0✦250 &fPlayer Experience'
+        - ' &8- &6★50 &fEnchanting Experience'
+        - ''
+        commands:
+        - 'buycommand= 80000 console= rewards_emerald1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.emerald1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&2ᴇᴍᴇʀᴀʟᴅ &8I'
+          lore:
+          - ''
+          - '&7Tier: &2ᴇᴍᴇʀᴀʟᴅ &8I'
+          - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8II'
+          - ''
+          - '&7Cost: &6$80.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &b[Pillager Axe]'
+          - ' &8- §x§f§f§f§f§0§0✦250 &fPlayer Experience'
+          - ' &8- &6★50 &fEnchanting Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '42':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM4MTY0NTg1MDlhZjAzMzg1NjVkN2ZhOTU4NWJlNGYxYWEwNDVmYmFkMzhlODZlNDcxOGRkNmZmMWE4N2U2ZSJ9fX0=
+        stack: 1 #Gold 1
+        name: '&6ɢᴏʟᴅ &8I'
+        lore:
+        - ''
+        - '&7Tier: &6ɢᴏʟᴅ &8I'
+        - '&7Next Tier: &6ɢᴏʟᴅ &8II'
+        - ''
+        - '&7Cost: &6$50.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &9♻2 Random  Keys'
+        - ' &8- §x§f§f§f§f§0§0✦100 &fPlayer Experience'
+        - ''
+        commands:
+        - 'buycommand= 50000 console= rewards_gold1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.gold1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&6ɢᴏʟᴅ &8I'
+          lore:
+          - ''
+          - '&7Tier: &6ɢᴏʟᴅ &8I'
+          - '&7Next Tier: &6ɢᴏʟᴅ &8II'
+          - ''
+          - '&7Cost: &6$50.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &9♻2 Random Keys'
+          - ' &8- §x§f§f§f§f§0§0✦100 &fPlayer Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '11':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA1ZGYzMzBkMDIwYjAwYmQ4NTE5YzhlODMxYjZhZDlmNjM0ZDkwZGY1YWYxNjE3YjNmYmQyYTg1NThmNGVjMiJ9fX0=
+        stack: 1 #Wood 3
+        name: '&eᴡᴏᴏᴅ &8III'
+        lore:
+        - ''
+        - '&7Tier: &eᴡᴏᴏᴅ &8III'
+        - '&7Next Tier: &3ɪʀᴏɴ &8I'
+        - ''
+        - '&7Cost: &6$4.5k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &6🪓25 &fForaging Experience'
+        - ''
+        commands:
+        - 'buycommand= 4500 console= rewards_wood3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.wood3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&eᴡᴏᴏᴅ &8III'
+          lore:
+          - ''
+          - '&7Tier: &eᴡᴏᴏᴅ &8III'
+          - '&7Next Tier: &3ɪʀᴏɴ &8I'
+          - ''
+          - '&7Cost: &6$4.5k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &6🪓25 &fForaging Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '20':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA1ZGYzMzBkMDIwYjAwYmQ4NTE5YzhlODMxYjZhZDlmNjM0ZDkwZGY1YWYxNjE3YjNmYmQyYTg1NThmNGVjMiJ9fX0=
+        stack: 1 #Wood 2
+        name: '&eᴡᴏᴏᴅ &8II'
+        lore:
+        - ''
+        - '&7Tier: &eᴡᴏᴏᴅ &8II'
+        - '&7Next Tier: &eᴡᴏᴏᴅ &8III'
+        - ''
+        - '&7Cost: &6$3.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &6★50 &fEnchanting Experience'
+        - ''
+        commands:
+        - 'buycommand= 3000 console= rewards_wood2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.wood2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&eᴡᴏᴏᴅ &8II'
+          lore:
+          - ''
+          - '&7Tier: &eᴡᴏᴏᴅ &8II'
+          - '&7Next Tier: &eᴡᴏᴏᴅ &8III'
+          - ''
+          - '&7Cost: &6$3.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &6★50 &fEnchanting Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '29':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA1ZGYzMzBkMDIwYjAwYmQ4NTE5YzhlODMxYjZhZDlmNjM0ZDkwZGY1YWYxNjE3YjNmYmQyYTg1NThmNGVjMiJ9fX0=
+        stack: 1 #Wood 1
+        name: '&eᴡᴏᴏᴅ &8I'
+        lore:
+        - ''
+        - '&7Tier: &eᴡᴏᴏᴅ &8I'
+        - '&7Next Tier: &eᴡᴏᴏᴅ &8II'
+        - ''
+        - '&7Cost: &6$1.5k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &6★10 &fEnchanting Experience'
+        - ''
+        commands:
+        - 'buycommand= 1500 console= rewards_wood1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.wood1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&eᴡᴏᴏᴅ &8I'
+          lore:
+          - ''
+          - '&7Tier: &eᴡᴏᴏᴅ &8I'
+          - '&7Next Tier: &eᴡᴏᴏᴅ &8II'
+          - ''
+          - '&7Cost: &6$1.5k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &6★10 &fEnchanting Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '37':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRjMmMzMTYzZjFjYTZlN2Y0MTVlNTgzNzYzYTZkMjE5OGEyZjg2NDdiYzFmNWE3YzNiMmY5YzkyYjRkMjNiNyJ9fX0=
+        stack: 1 #Stone 2
+        name: '&7ꜱᴛᴏɴᴇ &8II'
+        lore:
+        - ''
+        - '&7Tier: &7ꜱᴛᴏɴᴇ &8II'
+        - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8III'
+        - ''
+        - '&7Cost: &6$700.0'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦25 &fPlayer Experience'
+        - ' &8- &6⛏10 &fMining Experience'
+        - ' &8- &6🪓10 &fForaging Experience'
+        - ''
+        commands:
+        - 'buycommand= 700 console= rewards_stone2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.stone2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&7ꜱᴛᴏɴᴇ &8II'
+          lore:
+          - ''
+          - '&7Tier: &7ꜱᴛᴏɴᴇ &8II'
+          - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8III'
+          - ''
+          - '&7Cost: &6$700.0'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦25 &fPlayer Experience'
+          - ' &8- &6⛏10 &fMining Experience'
+          - ' &8- &6🪓10 &fForaging Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '36':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRjMmMzMTYzZjFjYTZlN2Y0MTVlNTgzNzYzYTZkMjE5OGEyZjg2NDdiYzFmNWE3YzNiMmY5YzkyYjRkMjNiNyJ9fX0=
+        stack: 1 #Stone 1
+        name: '&7ꜱᴛᴏɴᴇ &8I'
+        lore:
+        - ''
+        - '&7Tier: &7ꜱᴛᴏɴᴇ &8I'
+        - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8II'
+        - ''
+        - '&7Cost: &6$500.0'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦20 &fPlayer Experience'
+        - ' &8- &6🏹15 &fArchery Experience'
+        - ' &8- &6🎣10 &fFishing Experience'
+        - ''
+        commands:
+        - 'buycommand= 500 console= rewards_stone1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.stone1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&7ꜱᴛᴏɴᴇ &8I'
+          lore:
+          - ''
+          - '&7Tier: &7ꜱᴛᴏɴᴇ &8I'
+          - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8II'
+          - ''
+          - '&7Cost: &6$500.0'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦20 &fPlayer Experience'
+          - ' &8- &6🏹15 &fArchery Experience'
+          - ' &8- &6🎣10 &fFishing Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '18':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQzMzlkNTIzOTNkNTE4M2EzNjY0MDE1YzBiMmM2YzEwMTJlYTFiNTI1ZWQ5NTIwNzMzMTFjYTE4MGEwZTYifX19
+        stack: 1 #Grass 2
+        name: '&aɢʀᴀꜱꜱ &8II'
+        lore:
+        - ''
+        - '&7Tier: &aɢʀᴀꜱꜱ &8II'
+        - '&7Next Tier: &aɢʀᴀꜱꜱ &8III'
+        - ''
+        - '&7Cost: &6$100'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦10 &fPlayer Experience'
+        - ' &8- &6🗡10 &fFighting Experience'
+        - ''
+        commands:
+        - 'buycommand= 100 console= rewards_grass2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.grass2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&aɢʀᴀꜱꜱ &8II'
+          lore:
+          - ''
+          - '&7Tier: &aɢʀᴀꜱꜱ &8II'
+          - '&7Next Tier: &aɢʀᴀꜱꜱ &8III'
+          - ''
+          - '&7Cost: &6$100'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦10 &fPlayer Experience'
+          - ' &8- &6🗡10 &fFighting Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '9':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQzMzlkNTIzOTNkNTE4M2EzNjY0MDE1YzBiMmM2YzEwMTJlYTFiNTI1ZWQ5NTIwNzMzMTFjYTE4MGEwZTYifX19
+        stack: 1 #Grass 1
+        name: '&aɢʀᴀꜱꜱ &8I'
+        lore:
+        - ''
+        - '&7Tier: &aɢʀᴀꜱꜱ &8I'
+        - '&7Next Tier: &aɢʀᴀꜱꜱ &8II'
+        - ''
+        - '&7Cost: &6$50'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦5 &fPlayer Experience'
+        - ' &8- &6⛏10 &fMining Experience'
+        - ' &8- &6🪓10 &fForaging Experience'
+        - ''
+        commands:
+        - 'buycommand= 50 console= rewards_grass1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.grass1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&aɢʀᴀꜱꜱ &8I'
+          lore:
+          - ''
+          - '&7Tier: &aɢʀᴀꜱꜱ &8I'
+          - '&7Next Tier: &aɢʀᴀꜱꜱ &8II'
+          - ''
+          - '&7Cost: &6$50'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦5 &fPlayer Experience'
+          - ' &8- &6⛏10 &fMining Experience'
+          - ' &8- &6🪓10 &fForaging Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '12':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlNzFhZWQwMTFmNDQxM2M1MzI3NWU3M2ZmN2MzOTU2ZDdkZWY2ODQ2OGJmZWNhNjExYjE0ZGMxN2I2MDllOCJ9fX0=
+        stack: 1 #Iron 1
+        name: '&3ɪʀᴏɴ &8I'
+        lore:
+        - ''
+        - '&7Tier: &3ɪʀᴏɴ &8I'
+        - '&7Next Tier: &3ɪʀᴏɴ &8II'
+        - ''
+        - '&7Cost: &6$5.5k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &f[Ghast Bow]'
+        - ''
+        commands:
+        - 'buycommand= 5500 console= rewards_iron1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.iron1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&3ɪʀᴏɴ &8I'
+          lore:
+          - ''
+          - '&7Tier: &3ɪʀᴏɴ &8I'
+          - '&7Next Tier: &3ɪʀᴏɴ &8II'
+          - ''
+          - '&7Cost: &6$5.5k'
+          - '&7Status: §x§f§f§0§0§0§0&l✘'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &f[Ghast Bow]'
+          - ''
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '13':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlNzFhZWQwMTFmNDQxM2M1MzI3NWU3M2ZmN2MzOTU2ZDdkZWY2ODQ2OGJmZWNhNjExYjE0ZGMxN2I2MDllOCJ9fX0=
+        stack: 1 #Iron 2
+        name: '&3ɪʀᴏɴ &8II'
+        lore:
+        - ''
+        - '&7Tier: &3ɪʀᴏɴ &8II'
+        - '&7Next Tier: &3ɪʀᴏɴ &8III'
+        - ''
+        - '&7Cost: &6$8.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦50 &fPlayer Experience'
+        - ' &8- &9♻1 &fRandom Crate Key'
+        - ''
+        commands:
+        - 'buycommand= 8000 console= rewards_iron2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.iron2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&3ɪʀᴏɴ &8II'
+          lore:
+          - ''
+          - '&7Tier: &3ɪʀᴏɴ &8II'
+          - '&7Next Tier: &3ɪʀᴏɴ &8III'
+          - ''
+          - '&7Cost: &6$8.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦50 &fPlayer Experience'
+          - ' &8- &9♻1 &fRandom Crate Key'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '22':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlNzFhZWQwMTFmNDQxM2M1MzI3NWU3M2ZmN2MzOTU2ZDdkZWY2ODQ2OGJmZWNhNjExYjE0ZGMxN2I2MDllOCJ9fX0=
+        stack: 1 #Iron 3
+        name: '&3ɪʀᴏɴ &8| &8III'
+        lore:
+        - ''
+        - '&7Tier: &3ɪʀᴏɴ &8| &8III'
+        - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8I'
+        - ''
+        - '&7Cost: &6$10.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &6⚘20 &fFarming Experience'
+        - ''
+        commands:
+        - 'buycommand= 10000 console= rewards_iron3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.iron3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&3ɪʀᴏɴ &8| &8III'
+          lore:
+          - ''
+          - '&7Tier: &3ɪʀᴏɴ &8III'
+          - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8I'
+          - ''
+          - '&7Cost: &6$10.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &6⚘20 &fFarming Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '24':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM4MTY0NTg1MDlhZjAzMzg1NjVkN2ZhOTU4NWJlNGYxYWEwNDVmYmFkMzhlODZlNDcxOGRkNmZmMWE4N2U2ZSJ9fX0=
+        stack: 1 #Gold 3
+        name: '&6ɢᴏʟᴅ &8III'
+        lore:
+        - ''
+        - '&7Tier: &6ɢᴏʟᴅ &8III'
+        - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8I'
+        - ''
+        - '&7Cost: &6$70.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§0§0§f§f§0§05 &fEmerald'
+        - ''
+        commands:
+        - 'buycommand= 70000 console= rewards_gold3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.gold3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&6ɢᴏʟᴅ &8III'
+          lore:
+          - ''
+          - '&7Tier: &6ɢᴏʟᴅ &8III'
+          - '&7Next Tier: &2ᴇᴍᴇʀᴀʟᴅ &8I'
+          - ''
+          - '&7Cost: &6$70.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§0§0§f§f§0§05 &fEmerald'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '26':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY5ZDY4MTAxZGY2MjkzM2IyM2QxYzgyMzQwYTc2MGVhNzdmMjBhZGExNGFmZjdiODBiNDdhNTdlYzI5MGMzOCJ9fX0=
+        stack: 1 #Diamond 1
+        name: '&bᴅɪᴀᴍᴏɴᴅ &8I'
+        lore:
+        - ''
+        - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8I'
+        - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8II'
+        - ''
+        - '&7Cost: &6$120.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦300 &fPlayer Experience'
+        - ' &8- &e16 &fGold Ingot'
+        - ' &8- &f16 &fIron Ingot'
+        - ''
+        commands:
+        - 'buycommand= 120000 console= rewards_diamond1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.diamond1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&bᴅɪᴀᴍᴏɴᴅ &8I'
+          lore:
+          - ''
+          - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8I'
+          - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8II'
+          - ''
+          - '&7Cost: &6$120.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦300 &fPlayer Experience'
+          - ' &8- &e16 &fGold Ingot'
+          - ' &8- &f16 &fIron Ingot'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '27':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQzMzlkNTIzOTNkNTE4M2EzNjY0MDE1YzBiMmM2YzEwMTJlYTFiNTI1ZWQ5NTIwNzMzMTFjYTE4MGEwZTYifX19
+        stack: 1 #Grass 3
+        name: '&aɢʀᴀꜱꜱ &8III'
+        lore:
+        - ''
+        - '&7Tier: &aɢʀᴀꜱꜱ &8III'
+        - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8I'
+        - ''
+        - '&7Cost: &6$250.0'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &6🗡10 &fFighting Experience'
+        - ''
+        commands:
+        - 'buycommand= 250 console= rewards_grass3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.grass3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&aɢʀᴀꜱꜱ &8III'
+          lore:
+          - ''
+          - '&7Tier: &aɢʀᴀꜱꜱ &8III'
+          - '&7Next Tier: &7ꜱᴛᴏɴᴇ &8I'
+          - ''
+          - '&7Cost: &6$250.0'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &6🗡10 &fFighting Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '31':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ1NzI0YTc5ZjkwZmQxZTU0NzY1ZDc1OTY5MjgxNDZkY2I5ZTUwZmRiODg1OTYyMDFjNGEyMzVjNGE2ZjRlZSJ9fX0=
+        stack: 1 #Copper 1
+        name: '&cᴄᴏᴘᴘᴇʀ &8I'
+        lore:
+        - ''
+        - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8I'
+        - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8II'
+        - ''
+        - '&7Cost: &6$20.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &9♻1 &fRandom Crate Key'
+        - ''
+        commands:
+        - 'buycommand= 20000 console= rewards_copper1 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.copper1'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&cᴄᴏᴘᴘᴇʀ &8I'
+          lore:
+          - ''
+          - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8I'
+          - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8II'
+          - ''
+          - '&7Cost: &6$20.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &9♻1 &fRandom Crate Key'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '33':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM4MTY0NTg1MDlhZjAzMzg1NjVkN2ZhOTU4NWJlNGYxYWEwNDVmYmFkMzhlODZlNDcxOGRkNmZmMWE4N2U2ZSJ9fX0=
+        stack: 1 #Gold 2
+        name: '&6ɢᴏʟᴅ &8II'
+        lore:
+        - ''
+        - '&7Tier: &6ɢᴏʟᴅ &8II'
+        - '&7Next Tier: &6ɢᴏʟᴅ &8III'
+        - ''
+        - '&7Cost: &6$61.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦150 &fPlayer Experience'
+        - ''
+        commands:
+        - 'buycommand= 6100 console= rewards_gold2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.gold2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&6ɢᴏʟᴅ &8II'
+          lore:
+          - ''
+          - '&7Tier: &6ɢᴏʟᴅ &8II'
+          - '&7Next Tier: &6ɢᴏʟᴅ &8III'
+          - ''
+          - '&7Cost: &6$61.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦150 &fPlayer Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '35':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY5ZDY4MTAxZGY2MjkzM2IyM2QxYzgyMzQwYTc2MGVhNzdmMjBhZGExNGFmZjdiODBiNDdhNTdlYzI5MGMzOCJ9fX0=
+        stack: 1 #Diamond 2
+        name: '&bᴅɪᴀᴍᴏɴᴅ &8II'
+        lore:
+        - ''
+        - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8II'
+        - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8III'
+        - ''
+        - '&7Cost: &6$150.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &9♻5 Random Keys'
+        - ' &8- §x§f§f§f§f§0§0✦1,000 &fPlayer Experience'
+        - ''
+        commands:
+        - 'buycommand= 150000 console= rewards_diamond2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.diamond2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&bᴅɪᴀᴍᴏɴᴅ &8II'
+          lore:
+          - ''
+          - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8II'
+          - '&7Next Tier: &bᴅɪᴀᴍᴏɴᴅ &8III'
+          - ''
+          - '&7Cost: &6$150.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &9♻5 Random Keys'
+          - ' &8- §x§f§f§f§f§0§0✦1,000 &fPlayer Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '38':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRjMmMzMTYzZjFjYTZlN2Y0MTVlNTgzNzYzYTZkMjE5OGEyZjg2NDdiYzFmNWE3YzNiMmY5YzkyYjRkMjNiNyJ9fX0=
+        stack: 1 #Stone 3
+        name: '&7ꜱᴛᴏɴᴇ &8III'
+        lore:
+        - ''
+        - '&7Tier: &7ꜱᴛᴏɴᴇ &8III'
+        - '&7Next Tier: &eᴡᴏᴏᴅ &8I'
+        - ''
+        - '&7Cost: &6$1.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§f§f§0§0✦50 &fPlayer Experience'
+        - ' &8- &d8 &fAmethyst Shard'
+        - ''
+        commands:
+        - 'buycommand= 1000 console= rewards_stone3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.stone3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&7ꜱᴛᴏɴᴇ &8III'
+          lore:
+          - ''
+          - '&7Tier: &7ꜱᴛᴏɴᴇ &8III'
+          - '&7Next Tier: &eᴡᴏᴏᴅ &8I'
+          - ''
+          - '&7Cost: &6$1.0K'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§f§f§0§0✦50 &fPlayer Experience'
+          - ' &8- &d8 &fAmethyst Shard'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '40':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ1NzI0YTc5ZjkwZmQxZTU0NzY1ZDc1OTY5MjgxNDZkY2I5ZTUwZmRiODg1OTYyMDFjNGEyMzVjNGE2ZjRlZSJ9fX0=
+        stack: 1 #Copper 2
+        name: '&cᴄᴏᴘᴘᴇʀ &8II'
+        lore:
+        - ''
+        - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8II'
+        - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8III'
+        - ''
+        - '&7Cost: &6$25.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &f[Demon Sword]'
+        - ' &8- §x§f§f§f§f§0§0✦75 &fPlayer Experience'
+        - ' &8- &6🪓25 &fForaging Experience'
+        - ' &8- &6🗡25 &fFighting Experience'
+        - ' &8- &6⚗25 &fAlchemy Experience'
+        - ''
+        commands:
+        - 'buycommand= 25000 console= rewards_copper2 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.copper2'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&cᴄᴏᴘᴘᴇʀ &8II'
+          lore:
+          - ''
+          - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8II'
+          - '&7Next Tier: &cᴄᴏᴘᴘᴇʀ &8III'
+          - ''
+          - '&7Cost: &6$25.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &f[Demon Sword]'
+          - ' &8- §x§f§f§f§f§0§0✦75 &fPlayer Experience'
+          - ' &8- &6🪓25 &fForaging Experience'
+          - ' &8- &6🗡25 &fFighting Experience'
+          - ' &8- &6⚗25 &fAlchemy Experience'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '41':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ1NzI0YTc5ZjkwZmQxZTU0NzY1ZDc1OTY5MjgxNDZkY2I5ZTUwZmRiODg1OTYyMDFjNGEyMzVjNGE2ZjRlZSJ9fX0=
+        stack: 1 #Copper 3
+        name: '&cᴄᴏᴘᴘᴇʀ &8III'
+        lore:
+        - ''
+        - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8III'
+        - '&7Next Tier: &6ɢᴏʟᴅ &8I'
+        - ''
+        - '&7Cost: &6$34.0k'
+        - '&7Status: §x§f§f§0§0§0§0&l✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- §x§f§f§0§0§0§0[Bloodlust Axe]'
+        - ''
+        commands:
+        - 'buycommand= 34000 console= rewards_copper3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.copper3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&cᴄᴏᴘᴘᴇʀ &8III'
+          lore:
+          - ''
+          - '&7Tier: &cᴄᴏᴘᴘᴇʀ &8III'
+          - '&7Next Tier: &6ɢᴏʟᴅ &8I'
+          - ''
+          - '&7Cost: &6$34.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- §x§f§f§0§0§0§0[Bloodlust Axe]'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '44':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY5ZDY4MTAxZGY2MjkzM2IyM2QxYzgyMzQwYTc2MGVhNzdmMjBhZGExNGFmZjdiODBiNDdhNTdlYzI5MGMzOCJ9fX0=
+        stack: 1 #Diamond 3
+        name: '&bᴅɪᴀᴍᴏɴᴅ &8III'
+        lore:
+        - ''
+        - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8III'
+        - '&8(§x§f§f§0§0§0§0MAXED&8)'
+        - ''
+        - '&7Cost: &6$165.0k'
+        - '&7Status: §x§f§f§0§0§0§0✘'
+        - ''
+        - '&7Rewards:'
+        - ' &8- &9♻10 Random Keys'
+        - ''
+        commands:
+        - 'buycommand= 165000 console= rewards_diamond3 %cp-player-name%'
+        - 'cpc'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: 'rewards.diamond3'
+          material: LIME_STAINED_GLASS_PANE
+          enchanted: true
+          name: '&bᴅɪᴀᴍᴏɴᴅ &8III'
+          lore:
+          - ''
+          - '&7Tier: &bᴅɪᴀᴍᴏɴᴅ &8III'
+          - ''
+          - '&7Cost: &6$165.0k'
+          - '&7Status: §x§0§0§f§f§0§0&l✔'
+          - ''
+          - '&7Rewards:'
+          - ' &8- &9♻10 Random Keys'
+          - ''
+          - '§x§f§f§0§0§0§0You already evolved!'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+      '45':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        duplicate: '46-48,50-53'
+        name: ' '

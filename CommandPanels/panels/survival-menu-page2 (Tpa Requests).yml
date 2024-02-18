@@ -1,0 +1,48 @@
+panels:
+  tpamenu:
+    perm: default
+    rows: 1
+    title: '&e&lSurvival &f&lMenu &8[Tpa Manager]'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '1':
+        material: ENDER_EYE
+        stack: 1
+        name: '&bTeleport to Player'
+        lore:
+        - '&8command: /tpa <player-name>'
+        commands:
+        - op= tpagui
+      '5':
+        material: LIME_DYE
+        stack: 1
+        name: '&6Toggle Tpa Requests'
+        lore:
+        - '&8command: /tpatoggle'
+        commands:
+        - 'tpatoggle'
+        - 'sound= ENTITY_EGG_THROW'
+      '3':
+        material: LIME_WOOL
+        stack: 1
+        name: '&aAccept teleport Request'
+        lore:
+        - '&8command: /tpaccept'
+        commands:
+        - 'tpaccept'
+      '8':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '&c&lBack'
+        commands:
+        - 'open= survivalmenu1'
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

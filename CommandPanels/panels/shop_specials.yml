@@ -1,0 +1,183 @@
+panels:
+  shop_specials:
+    perm: default
+    commands-on-open:
+    - add-data= selected_item_name grass_block %cp-player-name%
+    - add-data= previous_page shop_main %cp-player-name%
+    - add-data= previous_section shop_specials %cp-player-name%
+    - add-data= selected_item_buy_price 100 %cp-player-name%
+    - set-data= selected_item_name grass_block %cp-player-name%
+    - set-data= previous_section shop_specials %cp-player-name%
+    - set-data= previous_page shop_main %cp-player-name%
+    - set-data= selected_item_buy_price 100 %cp-player-name%
+    rows: 2
+    title: '#ecd58e₪ &8| #ecd58eS#eacd7ep#e8c66fe#e6be5fc#e3b64fi#e1ae3fa#dfa730l#dd9f20s'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '13':
+        material: AIR
+        stack: 1
+        name: ' '
+      '9':
+        material: cps= self
+        stack: 1
+        name: '%player_name%'
+        lore:
+        - '&6Money: &c$%vault_eco_balance%'
+      '10':
+        material: AIR
+        stack: 1
+        name: ' '
+      '11':
+        material: AIR
+        stack: 1
+        name: ' '
+      '12':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '&dPrevious Page'
+      '14':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&bNext Page'
+      '15':
+        material: AIR
+        stack: 1
+        name: ' '
+      '16':
+        material: AIR
+        stack: 1
+        name: ' '
+      '17':
+        material: AIR
+        stack: 1
+        name: ' '
+      '0':
+        material: COAL_ORE
+        stack: 1
+        name: '&bProtection Stone &7[&f5 blocks width&7]'
+        lore:
+        - '&aLeft-Click: Buy: &c$1000'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fSuppored Worlds:'
+        - '&8● &7Survival World'
+        - '&8● &7Nether World'
+        - '&8● &7The End World'
+        - ''
+        - '&8&m-----'
+        - '&7Place this on the ground in'
+        - '&7order to protect your valueable'
+        - '&7stuff form other players.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name protection_stone_1 %cp-player-name%
+        - set-data= selected_item_buy_price 1000 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '1':
+        material: IRON_ORE
+        stack: 1
+        name: '&bProtection Stone &7[&f10 blocks width&7]'
+        lore:
+        - '&aLeft-Click: Buy: &c$2000'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fSuppored Worlds:'
+        - '&8● &7Survival World'
+        - '&8● &7Nether World'
+        - '&8● &7The End World'
+        - ''
+        - '&8&m-----'
+        - '&7Place this on the ground in'
+        - '&7order to protect your valueable'
+        - '&7stuff form other players.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name protection_stone_2 %cp-player-name%
+        - set-data= selected_item_buy_price 2000 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '2':
+        material: GOLD_ORE
+        stack: 1
+        name: '&bProtection Stone &7[&f20 blocks width&7]'
+        lore:
+        - '&aLeft-Click: Buy: &c$2000'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fSuppored Worlds:'
+        - '&8● &7Survival World'
+        - '&8● &7Nether World'
+        - '&8● &7The End World'
+        - ''
+        - '&8&m-----'
+        - '&7Place this on the ground in'
+        - '&7order to protect your valueable'
+        - '&7stuff form other players.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name protection_stone_3 %cp-player-name%
+        - set-data= selected_item_buy_price 2000 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '3':
+        material: DIAMOND_ORE
+        stack: 1
+        name: '&bProtection Stone &7[&f30 blocks width&7]'
+        lore:
+        - '&aLeft-Click: Buy: &c$6000'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fSuppored Worlds:'
+        - '&8● &7Survival World'
+        - '&8● &7Nether World'
+        - '&8● &7The End World'
+        - ''
+        - '&8&m-----'
+        - '&7Place this on the ground in'
+        - '&7order to protect your valueable'
+        - '&7stuff form other players.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name protection_stone_4 %cp-player-name%
+        - set-data= selected_item_buy_price 6000 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '4':
+        material: CHEST
+        stack: 1
+        name: '&eBackpack'
+        lore:
+        - '&aLeft-Click: Buy: &c$2000'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&8&m-----'
+        - '&7Buy your own personal backpack,'
+        - '&7and have more space for your adventures.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name backpack %cp-player-name%
+        - set-data= selected_item_buy_price 2000 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

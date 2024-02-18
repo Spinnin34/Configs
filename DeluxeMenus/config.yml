@@ -1,0 +1,10 @@
+# DeluxeMenus 1.13.7-Release main configuration file
+# 
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  voltyum:
+    file: voltyum.yml

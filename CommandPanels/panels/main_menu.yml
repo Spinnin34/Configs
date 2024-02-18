@@ -1,0 +1,215 @@
+panels:
+  main_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu'
+    empty: GRAY_STAINED_GLASS_PANE
+    outside-commands:
+    - cpc
+    open-with-item:
+      material: BOOK
+      name: '#fcbd02&k| #fc1f02Su#fc3402rv#fc4102iv#fc5902al #fc6e02Me#fc7702nu #fcbd02&k|'
+      enchanted: true
+      lore:
+      - '&8Command: /menu main'
+      - '&8------'
+      - '&7Acceso rápido a todo'
+      - '&7en el servidor.'
+      - '&8------'
+      - ''
+      - '&7©Spinnin'
+      - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+      stationary: 8
+      commands:
+      - open= main_menu
+    item:
+      '51':
+        material: BEACON 
+        stack: 1
+        name: '#fc3737Regresar al spawn'
+        lore:
+        - '&8Command: /spawn'
+        - ''
+        - '&8&m-----'
+        - '&7Teletransporte rápido al'
+        - '&7spawn del server.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic izquierdo para teletransportarse.'
+        commands:
+        - spawn
+      '49':
+        material: cps= self
+        stack: 1
+        name: '#FFB900☂ #474747| #51fc37Ajustes'
+        lore:
+        - '&8&m-----'
+        - '&7Activar y deshabilitar rápido'
+        - '&7características de los juegos.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Click izquierdo'
+        commands:
+        - open= settings_menu
+        - sound= UI_BUTTON_CLICK
+      '39':
+        material: YELLOW_STAINED_GLASS_PANE
+        name: '&7©Spinnin'
+        stack: 1
+      '40':
+        material: YELLOW_STAINED_GLASS_PANE
+        name: '&7©Spinnin'
+        stack: 1
+      '41':
+        material: YELLOW_STAINED_GLASS_PANE
+        name: '&7©Spinnin'
+        stack: 1
+      '42':
+        material: YELLOW_STAINED_GLASS_PANE
+        name: '&7©Spinnin'
+        stack: 1
+      '38':
+        material: YELLOW_STAINED_GLASS_PANE
+        name: '&7©Spinnin'
+        stack: 1
+      '14':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2YmM2ODU0N2M3NmJhNDYyNTA4NTAyOTgwNDY0N2I4MmY4MTY3MDVjOGJiNjFlMzdkMTQ4NWE3NWM3MmM1ZiJ9fX0=
+        stack: 1
+        name: '#FFB900✦ #474747| #fc7500Shop'
+        lore:
+        - '&8Command: /menu shop'
+        - '&8&m-----'
+        - '&7Comprar y vender rápidos los artículos'
+        - '&7En tu aventura de supervivencia.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - shop
+        - sound= UI_BUTTON_CLICK
+      '11':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0=
+        stack: 1
+        name: '#FFB900❀ #474747| #00F9FFWorld '
+        lore:
+        - '&8Command: /menu world'
+        - '&8&m-----'
+        - '&7Teletransportarse a cualquier mundo'
+        - '&7con solo un toque.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+      '12':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0=
+        stack: 1
+        name: '#FFB900❀ #474747| #FF5959RTP '
+        lore:
+        - '&8Command: /Rtp'
+        - '&8&m-----'
+        - '&7Teletransportarse ramdon por el mundo'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - open= rtp
+        - sound= UI_BUTTON_CLICK
+      '13':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlhNjAwYWIwYTgzMDk3MDY1Yjk1YWUyODRmODA1OTk2MTc3NDYwOWFkYjNkYmQzYTRjYTI2OWQ0NDQwOTU1MSJ9fX0=
+        name: '#FFB900✎ #474747| #02fc23Jo#02fc23bs'
+        lore:
+        - '&8Command: /menu jobs'
+        - '&8&m-----'
+        - '&7Elige tu trabajo favorito'
+        - '&7Y empiece a ganar dinero.'
+        - '&8&m---------------'
+        - ''
+        - '&7Trabajos activos actuales &a%jobsr_user_joinedjobcount%&8/&a%jobsr_maxjobs%'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        stack: 1
+        commands:
+        - open= jobs_menu
+        - sound= UI_BUTTON_CLICK
+      '15':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzYzMwNGFlNTJkNGQwNTdhY2VmYWY2NTg3Y2VlZTEyY2NjODdlMzc2YWQ4MGE5MTU2NTJlMWI0MjI0MjBmMSJ9fX0=
+        stack: 1
+        name: '#FFB900▼ #474747| #9f00fcQ#9f00fcu#9f00fce#ab20fcs#af2afct#b437fcs'
+        lore:
+        - '&8Command: /menu quests'
+        - '&8&m-----'
+        - '&7Explorar el mundo mientras'
+        - '&7Completando misiones para recompensas increíbles.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - quests
+        - sound= UI_BUTTON_CLICK
+      '21':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM3YjJkNDEzOTU2MWZmMTkxYTc1NjA2OGM5MDdkNGI0OTI5MWJjZDY0MzI5YTE3MmU5MWRkMWQwM2JiOTNiZSJ9fX0=
+        stack: 1
+        name: '#FFB900⛏ #474747| #fc374bVoltyum'
+        lore:
+        - '&8Command: /voltyum'
+        - '&8&m-----'
+        - '&7Panel de prueba de voltyum'
+        - '&7©Spinnin'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - voltyum
+        - sound= UI_BUTTON_CLICK
+      '22':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0MDc2NWE3NTBmMzhmMjI0YmI4ZGVmYWVlODA2YmI2MDU4Zjg0ODE4MzM4MTQ2ZWJmOTRhMDJlNjNkODg1ZiJ9fX0=
+        stack: 1 
+        name: '#FFB900✪ #474747| #a7fc37recompensas'
+        lore:
+        - '&8Command: /menu rewards'
+        - '&8&m-----'
+        - '&7Obtenga sus recompensas diarias'
+        - '&7aquí'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - dailybonus
+        - sound= UI_BUTTON_CLICK
+      '47':
+        material: NETHERITE_SWORD
+        stack: 1
+        name: '#FFB900🔥 #474747| #37fce5%player_name% Estadísticas'
+        lore:
+        - '#02acce◆ #2d2d2d| #595959Player Kills:#8400a5 %statistic_player_kills%'
+        - '#02acce◆ #2d2d2d| #595959Mob Kills:#ce5900 %statistic_mob_kills%'
+        - '#02acce◆ #2d2d2d| #595959Fallecidas:#a50000 %statistic_deaths%'
+        - '#02acce◆ #2d2d2d| #595959Tiempo de juego:#efb700 %statistic_time_played% ⌚'
+        - '#02acce◆ #2d2d2d| #595959Dinero:#f4fc05 %vault_eco_balance_formatted%'
+      '20':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZiMWQ0OTQ3NzYzOTE3ODE0YWUxNjMyYjgyMDY5NjA5ODkyNzg5NWFhYWYxMjRjZDI5ZWIzNTg1NmFhYTViOSJ9fX0=
+        stack: 1
+        name: '#ebdc27☜ &8| #ebdc27ah'
+        lore:
+        - '&8Command: /ah'
+        - '&8&m-----'
+        - '&7Una tienda conducida solo por'
+        - '&7¡los jugadores!'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - ah
+      '24':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNkMTQ1NjFiYmQwNjNmNzA0MjRhOGFmY2MzN2JmZTljNzQ1NjJlYTM2ZjdiZmEzZjIzMjA2ODMwYzY0ZmFmMSJ9fX0=
+        stack: 1
+        name: '#b5e929✚ &8| #b5e929S#9ae62ck#7fe22ei#64df31l#49db33l#2ed836s'
+        lore:
+        - '&8Command: /skills'
+        - '&8&m-----'
+        - '&7¡Vea su progreso de habilidad!'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - skills

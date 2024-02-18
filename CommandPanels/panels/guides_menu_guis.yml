@@ -1,0 +1,101 @@
+panels:
+  guides_menu_guis:
+    perm: default
+    rows: 4
+    title: '&fGuides - Menus'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: CRAFTING_TABLE
+        stack: 1
+        name: '&7Look at all Menus'
+        lore:
+        - ''
+        - '&fWe suggest taking a Closser'
+        - '&flook at all Menus in the Survival'
+        - '&fMenu. This will help you understand'
+        - '&fthe limitless possibilities with it!'
+        - ''
+      '1':
+        material: cps= self
+        stack: 1
+        name: '&7Settings Menu'
+        lore:
+        - ''
+        - '&fThe settings menu is a very powerful'
+        - '&ftool for customizing the look'
+        - '&fand features of the server!'
+        - ''
+      '2':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0=
+        stack: 1
+        name: '&7World Teleport Menu'
+        lore:
+        - ''
+        - '&fIn this menu, you can teleport'
+        - '&fto many worlds, be able to RTP,'
+        - '&fand set homes in your current world.'
+        - ''
+      '3':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQwNmU0NTMxOGU5YTRhNmJmZTEzMmYyMDJmZTNjZWFjMTVkMTFlYWVkYmVmMWViMDZhMzc2ZGI0MzMwOTBhOCJ9fX0=
+        stack: 1
+        name: '&7Storage Vaults Menu'
+        lore:
+        - ''
+        - '&fIn this menu, you can store your'
+        - '&fvaluable items with no worries'
+        - '&fthat someone will steal them!'
+        - ''
+      '4':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM3YjJkNDEzOTU2MWZmMTkxYTc1NjA2OGM5MDdkNGI0OTI5MWJjZDY0MzI5YTE3MmU5MWRkMWQwM2JiOTNiZSJ9fX0=
+        stack: 1
+        name: '&7Kits Menu'
+        lore:
+        - ''
+        - '&fIn this menu, you can select a kit'
+        - '&fbased on your rank that contains'
+        - '&fstarter items for everyone!'
+        - ''
+      '5':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0MDc2NWE3NTBmMzhmMjI0YmI4ZGVmYWVlODA2YmI2MDU4Zjg0ODE4MzM4MTQ2ZWJmOTRhMDJlNjNkODg1ZiJ9fX0=
+        stack: 1
+        name: '&7Rewards Menu'
+        lore:
+        - ''
+        - '&fIn this menu, you can get daily'
+        - '&frewards that contain valuable'
+        - '&floot every day!'
+        - ''
+      '20':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '21':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '22':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' ' 
+      '23':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '24':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '31':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Go Back.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Right-Click to open the menu.'
+        commands:
+        - open= guides_menu
+        - sound= UI_BUTTON_CLICK

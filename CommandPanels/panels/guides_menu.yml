@@ -1,0 +1,124 @@
+panels:
+  guides_menu:
+    perm: default
+    rows: 6
+    title: '&fGuides - Main Menu'
+    empty: BLACK_STAINED_GLASS_PANE
+    commands:
+    - 'guides'
+    - 'guide'
+    item:
+      '0':
+        material: CRAFTING_TABLE
+        stack: 1
+        name: '&bMenu Guides'
+        lore:
+        - '&7See information about'
+        - '&7The menus.'
+        commands:
+        - 'open= guides_menu_guis'
+      '1':
+        material: BEACON
+        stack: 1
+        name: '&bProtection Guides'
+        lore:
+        - '&7See how you can protect'
+        - '&7Your home.'
+        commands:
+        - 'open= guides_menu_protection'
+      '2':
+        material: EMERALD
+        stack: 1
+        name: '&bShop Guides'
+        lore:
+        - '&7See how you can use the'
+        - '&7Shop to your advantage.'
+        commands:
+        - 'open= guides_menu_shop'
+      '3':
+        material: GLASS
+        stack: 1
+        name: '&bAuction Guides'
+        lore:
+        - '&7See how you can use the'
+        - '&7Auctions menu.'
+        commands:
+        - 'open= guides_menu_auction'
+      '4':
+        material: CHEST
+        stack: 1
+        name: '&bTrade Guides'
+        lore:
+        - '&7See how you can trade'
+        - '&7With other people.'
+        commands:
+        - 'open= guides_menu_trade'
+      '5':
+        material: IRON_SWORD
+        stack: 1
+        name: '&bSkill Guides'
+        lore:
+        - '&7See information about'
+        - '&7the skills in the server..'
+        commands:
+        - 'open= guides_menu_skill'
+      '6':
+        material: BOOK
+        stack: 1
+        name: '&bQuest Guides'
+        lore:
+        - '&7See information about'
+        - '&7the quests in the server.'
+        commands:
+        - 'open= guides_menu_quest'
+      '7':
+        material: GOLDEN_PICKAXE
+        stack: 1
+        name: '&bJob Guides'
+        lore:
+        - '&7See information about'
+        - '&7jobs that you can work.'
+        commands:
+        - 'open= guides_menu_job'
+      '8':
+        material: ENDER_CHEST
+        stack: 1
+        name: '&bCrate Guides'
+        lore:
+        - '&7See information about the'
+        - '&7Creates in the server.'
+        commands:
+        - 'open= guides_menu_crate'
+      '38':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '39':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '40':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '41':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '42':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Right-Click to open the menu.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK

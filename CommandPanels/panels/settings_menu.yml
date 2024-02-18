@@ -1,0 +1,173 @@
+panels:
+  settings_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu'
+    commands:
+    - 'toggle-auto-quest'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0=
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00Volver'
+        lore:
+        - '&8------'
+        - '&7Volver al menú principal'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para abrir el menú.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '38':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '40':
+        material: LIME_STAINED_GLASS_PANE
+        name: ''
+        stack: 1
+      '41':
+        material: LIME_STAINED_GLASS_PANE
+        name: ''
+        stack: 1
+      '42':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '39':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '15':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#00fcde✉&r #474747| #00fcdeChat anuncios' # chat anuncios
+        lore:
+        - '&8Command: /anuncios'
+        - '&8------'
+        - '&7Activar chat anuncios'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= ia toggle announcement
+      '14':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#FFB900₪&r #474747| #fcf800Sc#fceb00or#fcd200eb#fcc100oa#fcac00rd' # Scoreboard
+        lore:
+        - '&8Command: /sternalboard toggle'
+        - '&8------'
+        - '&7Activar scoreboard'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= sternalboard toggle
+      '13':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#016bc6☂&r #474747| #016bc6T#015dc6r#0150c6a#0146c6d#0139c6e#0129c6s' # Trades
+        lore:
+        - '&8Command: /trades'
+        - '&8------'
+        - '&7Activar trades'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= trade toggle
+      '12':
+        material: GRAY_CANDLE
+        name: '#9900e5۞&r #474747| #9900e5S#8d02d3i#8501c6t' # sit
+        lore:
+        - '&8Command: /sit'
+        - '&8------'
+        - '&7Activar sit'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= sit toggle
+        stack: 1
+      '11':
+        material: GRAY_CANDLE
+        name: '#e300fc&k■&r #474747| #e300fcB#f400fco#fc00f4s#fc00e7s#fc00daB#fc00cea#fc00bdr' # BossBar
+        stack: 1
+        lore:
+        - '&8Command: /bossbar'
+        - '&8------'
+        - '&7Activar Boss Bar'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= tab bossbar
+      '21':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#f2e328✍ &8| #f2e328C#e6e842h#d9ed5ba#cdf275t'
+        lore:
+        - '&8Command: /togglechat'
+        - '&8------'
+        - '&7Activar Chat'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - op= togglechat
+      '22':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#99ecf2∞ &8| #99ecf2Auto Quests Seleccione'
+        lore:
+        - '&8Command: /toggle-auto-quest'
+        - '&8------'
+        - '&7Activar Auto Quests Seleccione'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - msg= &f» &cQuest &f« &fSelección de misiones automáticas &coff
+        - sound= UI_BUTTON_CLICK
+        - console= lp user %cp-player-name% permission set quests.auto.select false
+        has0:
+          value0: 'NOT %cp-player-name% HASPERM'
+          compare0: quests.auto.select
+          material: GRAY_CANDLE
+          stack: 1
+          name: '#99ecf2∞ &8| #99ecf2Q#93e7f2u#8ce2f1e#86ddf1s#80d8f0t#79d3f0 #73ceefA#6cc9efu#66c4eet#60bfeeo#59baed #53b5edS#4db0ece#46abecl#40a6ebe#39a1ebc#339ceat'
+          lore:
+          - '&8Command: /toggle-auto-quest'
+          - '&8------'
+          - '&7Activar Auto Quests Seleccione'
+          - '&8------'
+          - ''
+          - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+          commands:
+          - msg= &f» &cQuest &f« &fSelección de misiones automáticas &aon
+          - delay= 20 player.quest.random
+          - sound= UI_BUTTON_CLICK
+          - console= lp user %cp-player-name% permission set quests.auto.select true
+      '23':
+        material: GRAY_CANDLE
+        stack: 1
+        name: '#2ff7e2&m=&r &8| #2ff7e2A#2eefe2c#2de7e2t#2cdfe2i#2bd7e2o#2acee1n#29c6e1 #28bee1B#27b6e1a#26aee1r'
+        lore:
+        - '&8Command: /actionbar'
+        - '&8------'
+        - '&7Activar Action Bar'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic izquierdo para alternar la opción.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - 'actionbar'

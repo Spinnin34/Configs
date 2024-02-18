@@ -1,0 +1,337 @@
+panels:
+  rtp_warning_menu:
+    perm: default
+    rows: 5
+    title: '&7DO you want to RTP?'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '19':
+        material: BARRIER
+        stack: 1
+        name: '&cThis is not a supported world!'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - cpc
+        has0:
+          value0: '%player_world%'
+          compare0: 'world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the survival world'
+          - '&7Without setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - send= /rtp
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has1:
+          value0: '%player_world%'
+          compare0: 'world_nether'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the nether world'
+          - '&7&nwith setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - send= /rtp
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has2:
+          value0: '%player_world%'
+          compare0: 'resource_world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the resource world'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - op= resource tp
+          - sound= UI_BUTTON_CLICK
+          - cpc
+      '20':
+        material: BARRIER
+        stack: 1
+        name: '&cThis is not a supported world!'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - cpc
+        has0:
+          value0: '%player_world%'
+          compare0: 'world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the survival world'
+          - '&7Without setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - console= rtp player %cp-player-name% world
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has1:
+          value0: '%player_world%'
+          compare0: 'world_nether'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the nether world'
+          - '&7&nwith setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - console= mvtp %cp-player-name% world_nether
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has2:
+          value0: '%player_world%'
+          compare0: 'resource_world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the resource world'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - op= resource tp
+          - sound= UI_BUTTON_CLICK
+          - cpc
+      '21':
+        material: BARRIER
+        stack: 1
+        name: '&cThis is not a supported world!'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - cpc
+        has0:
+          value0: '%player_world%'
+          compare0: 'world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the survival world'
+          - '&7Without setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - console= rtp player %cp-player-name% world
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has1:
+          value0: '%player_world%'
+          compare0: 'world_nether'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the nether world'
+          - '&7&nwith setting a spawnpoint.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - console= mvtp %cp-player-name% world_nether
+          - console= mvconfirm
+          - sound= UI_BUTTON_CLICK
+          - cpc
+        has2:
+          value0: '%player_world%'
+          compare0: 'resource_world'
+          material: LIME_STAINED_GLASS_PANE
+          name: '&aYes I want to RTP!'
+          lore:
+          - '&8&m-----'
+          - '&7telport to random location'
+          - '&7In the resource world'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to RTP in this world.'
+          commands:
+          - op= resource tp
+          - sound= UI_BUTTON_CLICK
+          - cpc
+      '23':
+        material: RED_STAINED_GLASS_PANE
+        name: '&cNo I don''t want RTP!'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+        stack: 1
+      '28':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '29':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '30':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '31':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '32':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '33':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+      '34':
+        material: BLACK_STAINED_GLASS_PANE
+        name: ''
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+        stack: 1
+      '24':
+        material: RED_STAINED_GLASS_PANE
+        name: '&cNo I don''t want RTP!'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+        stack: 1
+      '25':
+        material: RED_STAINED_GLASS_PANE
+        name: '&cNo I don''t want RTP!'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - open= world_menu
+        - sound= UI_BUTTON_CLICK
+        stack: 1
+      '22':
+        material: PAPER
+        stack: 1
+        name: '&fDo you really want to RTP?'
+        lore:
+        - ''
+        - '&c⚠ &8| &4&lWARNING'
+        - '&4● &7This will reset your'
+        - '&4● &7location in this world.'
+        - '&4● &7It''s not recommended if you'
+        - '&4● &7have valuable progress'
+        - '&4● &7and no way of returning.'
+        - ''
+        has0:
+          value0: '%player_world%'
+          compare0: 'world'
+          material: PAPER
+          name: '&fDo you really want to RTP?'
+          lore:
+          - ''
+          - '&c⚠ &8| &4&lWARNING'
+          - '&4● &7This will reset your'
+          - '&4● &7location in the &eSurvival World&7.'
+          - '&4● &7It''s not recommended if you'
+          - '&4● &7have valuable progress'
+          - '&4● &7and no way of returning.'
+          - ''
+        has1:
+          value0: '%player_world%'
+          compare0: 'world_nether'
+          material: PAPER
+          name: '&fDo you really want to RTP?'
+          lore:
+          - ''
+          - '&c⚠ &8| &4&lWARNING'
+          - '&4● &7This will reset your'
+          - '&4● &7location in the &cNether World&7.'
+          - '&4● &7It''s not recommended if you'
+          - '&4● &7have valuable progress'
+          - '&4● &7and no way of returning.'
+          - ''
+        has2:
+          value0: '%player_world%'
+          compare0: 'resource_world'
+          material: PAPER
+          name: '&fDo you really want to RTP?'
+          lore:
+          - ''
+          - '&c⚠ &8| &4&lWARNING'
+          - '&4● &7This will reset your'
+          - '&4● &7location in the the &dResource World&7.'
+          - '&4● &7It''s not recommended if you'
+          - '&4● &7have valuable progress'
+          - '&4● &7and no way of returning.'
+          - ''
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

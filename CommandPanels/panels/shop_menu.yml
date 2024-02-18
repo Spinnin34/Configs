@@ -1,0 +1,202 @@
+panels:
+  shop_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu &8| &fShop - Main'
+    commands:
+    - shop
+    - s
+    commands-on-open:
+    - 'add-data= selected_item_name grass_block %cp-player-name%'
+    - 'add-data= previous_section shop_main %cp-player-name%'
+    - 'add-data= previous_page shop_main %cp-player-name%'
+    - 'add-data= selected_item_buy_price 100 %cp-player-name%'
+    #---------------
+    - 'set-data= selected_item_name grass_block %cp-player-name%'
+    - 'set-data= previous_section shop_main %cp-player-name%'
+    - 'set-data= previous_page shop_main %cp-player-name%'
+    - 'set-data= selected_item_buy_price 100 %cp-player-name%'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '11':
+        material: GRASS_BLOCK
+        stack: 1
+        name: '#f7fc38⚅ &8| #f7fc38B#e7fc2fl#d8fd26o#c8fd1cc#b9fe13k#a9fe0as'
+        lore:
+        - '&8&m-----'
+        - '&7Quick buy some of your favorite'
+        - '&7Blocks for your builds.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Blocks'
+        - 'sound= UI_BUTTON_CLICK'
+      '12':
+        material: SADDLE
+        name: '#feaa9e★ &8| #feaa9eO#fe8e80t#fe7261h#fd5743e#fd3b24r#fd1f06s'
+        stack: 1
+        lore:
+        - '&8&m-----'
+        - '&7Some random items form the game.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Others'
+        - 'sound= UI_BUTTON_CLICK'
+      '13':
+        material: GUNPOWDER
+        stack: 1
+        name: '#c0c0c0☄ &8| #c0c0c0M#acacaco#989898b#848484s'
+        lore:
+        - '&8&m-----'
+        - '&7Some mob drops that you can'
+        - '&7Sell at a fear price.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Mobs'
+        - 'sound= UI_BUTTON_CLICK'
+      '14':
+        material: WHEAT
+        stack: 1
+        name: '#28e636☁ &8| #28e636F#2aea39a#2cee3cr#2ef23fm#2ff741i#31fb44n#33ff47g'
+        lore:
+        - '&8&m-----'
+        - '&7Earn easy money by tankng care'
+        - '&7Of your farms'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Farming'
+        - 'sound= UI_BUTTON_CLICK'
+      '15':
+        material: CYAN_DYE
+        stack: 1
+        name: '#0fe1ff🌊 &8| #0fe1ffD#1dcefdy#2cbafae#3aa7f8s'
+        lore:
+        - '&8&m-----'
+        - '&7Add color to everything'
+        - '&7Around you.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Dyes'
+        - 'sound= UI_BUTTON_CLICK'
+      '20':
+        material: MUSIC_DISC_13
+        stack: 1
+        name: '#ce10fe♬ &8| #ce10feM#c71afdu#c024fds#b82dfci#b137fbc'
+        lore:
+        - '&8&m-----'
+        - '&7If you have allot of music disks'
+        - '&7You can sell them here.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Music'
+        - 'sound= UI_BUTTON_CLICK'
+      '24':
+        material: COW_SPAWN_EGG
+        stack: 1
+        name: '#2fd3fd⛄ &8| #2fd3fdS#2ecbfdp#2ec2fca#2dbafcw#2cb1fcn#2ca9fb #2ba0fbE#2a98fbg#2a8ffag#2987fas'
+        lore:
+        - '&8&m-----'
+        - '&7Buy some of your favorite'
+        - '&7Mobs and have them as a egg.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Spawneggs'
+        - 'sound= UI_BUTTON_CLICK'
+      '45':
+        material: cps= self
+        stack: 1
+        name: '%player_name%'
+        lore:
+        - '&6Money: &c$%vault_eco_balance%'
+      '49':
+        material: BARRIER # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to return.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '33':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| #f4a6f2D#e893e6r#dc80d9i#cf6ccdn#c359c0k#b746b4s'
+        commands:
+        - 'sound= UI_BUTTON_CLICK'
+        - 'open= shop_drinks'
+      '23':
+        material: TUBE_CORAL
+        name: '#aca4fd❤ &8| #aca4fdD#a69efde#a098fdc#9a92fdo#948cfdr#8d85fca#877ffct#8179fci#7b73fco#756dfcn'
+        stack: 1
+        lore:
+        - '&8&m-----'
+        - '&7Quick buy and decorate'
+        - '&7Your buildings.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Decoration'
+        - 'sound= UI_BUTTON_CLICK'
+      '22':
+        material: IRON_INGOT
+        name: '#dfdfdf⛏ &8| #dfdfdfO#d4d4d4r#c8c8c8e#bdbdbds'
+        stack: 1
+        lore:
+        - '&8&m-----'
+        - '&7Buy some of your favorite'
+        - '&7Ores without mining.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Ores'
+        - 'sound= UI_BUTTON_CLICK'
+      '21':
+        material: COOKED_BEEF
+        name: '#fda511🍖 &8| #fda511F#fc921eo#fc802ao#fb6d37d'
+        stack: 1
+        lore:
+        - '&8&m-----'
+        - '&7You don''t need to stay hungry'
+        - '&7When you have shop to buy your food.'
+        - '&8&m---------------'
+        - ''
+        - '#f76700■ Left-Click to enter the shop.'
+        commands:
+        - 'shop Food'
+        - 'sound= UI_BUTTON_CLICK'
+      '29':
+        material: TOTEM_OF_UNDYING
+        stack: 1
+        name: '#ecd58e₪ &8| #ecd58eS#eacd7ep#e8c66fe#e6be5fc#e3b64fi#e1ae3fa#dfa730l#dd9f20s'
+        commands:
+        - 'open= shop_specials'
+        - 'sound= UI_BUTTON_CLICK'
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

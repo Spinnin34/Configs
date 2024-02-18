@@ -1,0 +1,151 @@
+panels:
+  shop_drinks:
+    perm: default
+    commands-on-open:
+    - add-data= selected_item_name grass_block %cp-player-name%
+    - add-data= previous_page shop_main %cp-player-name%
+    - add-data= previous_section shop_specials %cp-player-name%
+    - add-data= selected_item_buy_price 100 %cp-player-name%
+    - set-data= selected_item_name grass_block %cp-player-name%
+    - set-data= previous_section shop_drinks %cp-player-name%
+    - set-data= previous_page shop_drinks %cp-player-name%
+    - set-data= selected_item_buy_price 100 %cp-player-name%
+    rows: 2
+    title: '#f4a6f2🧪 &8| #f4a6f2D#e893e6r#dc80d9i#cf6ccdn#c359c0k#b746b4s'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '9':
+        material: cps= self
+        stack: 1
+        name: '%player_name%'
+        lore:
+        - '&6Money: &c$%vault_eco_balance%'
+      '10':
+        material: AIR
+        stack: 1
+        name: ' '
+      '11':
+        material: AIR
+        stack: 1
+        name: ' '
+      '12':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '&dPrevious Page'
+      '14':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&bNext Page'
+      '15':
+        material: AIR
+        stack: 1
+        name: ' '
+      '13':
+        material: AIR
+        stack: 1
+        name: ' '
+      '16':
+        material: AIR
+        stack: 1
+        name: ' '
+      '17':
+        material: AIR
+        stack: 1
+        name: ' '
+      '0':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| &fʀᴇᴅʙᴜʟʟ'
+        lore:
+        - '&aLeft-Click: Buy: &c$350'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+        - '&8 ● &7Jump I &8[&f10:00&8]'
+        - '&8 ● &7Speed III &8[&f10:00&8]'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name redbull %cp-player-name%
+        - set-data= selected_item_buy_price 350 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '1':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| &fᴄᴏᴄᴀ ᴄᴏʟᴀ'
+        lore:
+        - '&aLeft-Click: Buy: &c$700'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+        - '&8 ● &7Glowing &8[&f10:00&8]'
+        - '&8 ● &7Haste IV &8[&f30:00&8]'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name coca_cola %cp-player-name%
+        - set-data= selected_item_buy_price 700 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '2':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| &fɢᴀᴛᴏʀᴀᴅᴇ'
+        lore:
+        - '&aLeft-Click: Buy: &c$900'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+        - '&8 ● &7Fire resistance &8[&f10:00&8]'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name gatorade %cp-player-name%
+        - set-data= selected_item_buy_price 900 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '3':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| &fᴍᴏɴꜱᴛᴇʀ'
+        lore:
+        - '&aLeft-Click: Buy: &c$200'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+        - '&8 ● &7Night vision &8[&f10:00&8]'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name monster %cp-player-name%
+        - set-data= selected_item_buy_price 200 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      '4':
+        material: POTION
+        stack: 1
+        name: '#f4a6f2🧪 &8| &fʙᴜᴄʜᴀɴᴀɴꜱ'
+        lore:
+        - '&aLeft-Click: Buy: &c$700'
+        - '&cItem cannot be sold.'
+        - ''
+        - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+        - '&8 ● &7Strength II &8[&f10:00&8]'
+        - ''
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - set-data= selected_item_name buchanans %cp-player-name%
+        - set-data= selected_item_buy_price 700 %cp-player-name%
+        - open= buy_items_shop
+        - sound= UI_BUTTON_CLICK
+      
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

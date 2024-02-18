@@ -1,0 +1,501 @@
+panels:
+  nametag_menu2:
+    perm: default
+    rows: 6
+    commands-on-open:
+    - add-data= bell_icon false %cp-player-name%
+    - add-data= toxic_icon false %cp-player-name%
+    - add-data= sword_icon false %cp-player-name%
+    - add-data= danger_icon false %cp-player-name%
+    - add-data= light_icon false %cp-player-name%
+    - add-data= time_icon false %cp-player-name%
+    - add-data= coffee_icon false %cp-player-name%
+    - add-data= recycle_icon false %cp-player-name%
+    - add-data= trident_icon false %cp-player-name%
+    - add-data= agree_icon false %cp-player-name%
+    - add-data= wave_icon false %cp-player-name%
+    - add-data= fire_icon false %cp-player-name%
+    - add-data= meteor_icon false %cp-player-name%
+    - add-data= leaf_icon false %cp-player-name%
+    - add-data= music_icon false %cp-player-name%
+    - add-data= snowman_icon false %cp-player-name%
+    - add-data= disagree_icon false %cp-player-name%
+    - add-data= karma_icon false %cp-player-name%
+    - add-data= sun_icon false %cp-player-name%
+    - add-data= ice_icon false %cp-player-name%
+    - add-data= archer_icon false %cp-player-name%
+    - add-data= warning_icon false %cp-player-name%
+    - add-data= heart_icon false %cp-player-name%
+    - add-data= smile_icon false %cp-player-name%
+    - add-data= moon_icon false %cp-player-name%
+    - add-data= miner_icon false %cp-player-name%
+    - add-data= potion_icon false %cp-player-name%
+    title: '&fSurvival Menu &8| &fName Tags (Page 2)'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '38':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '39':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '41':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '42':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '10':
+        material: NAME_TAG
+        stack: 1
+        name: '&6♫ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6♫&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= music_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-music_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6♫ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6♫&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% music
+      '11':
+        material: NAME_TAG
+        stack: 1
+        name: '&6☃ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6☃&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= snowman_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-snowman_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6☃ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6☃&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% snowman
+      '12':
+        material: NAME_TAG
+        stack: 1
+        name: '&6✘ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6✘&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= disagree_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-disagree_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6✘ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6✘&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% disagree
+      '13':
+        material: NAME_TAG
+        stack: 1
+        name: '&6☯ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6☯&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= karma_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-karma_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6☯ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6☯&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% karma
+      '14':
+        material: NAME_TAG
+        stack: 1
+        name: '&6☀ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6☀&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= sun_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-sun_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6☀ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6☀&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% sun
+      '15':
+        material: NAME_TAG
+        stack: 1
+        name: '&6❄ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6❄&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= ice_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-ice_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6❄ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6❄&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% ice
+      '16':
+        material: NAME_TAG
+        stack: 1
+        name: '&6🏹 &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6🏹&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= archer_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-archer_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6🏹 &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6🏹&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% archer
+      '23':
+        material: NAME_TAG
+        stack: 1
+        name: '&6⚠ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6⚠&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= warning_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-warning_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6⚠ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6⚠&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% warning
+      '47':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY5NzFkZDg4MWRiYWY0ZmQ2YmNhYTkzNjE0NDkzYzYxMmY4Njk2NDFlZDU5ZDFjOTM2M2EzNjY2YTVmYTYifX19 # Go Left
+        stack: 1
+        name: '#FFB900→ #474747| #fc4902N#fc5902e#fc6e02x#fc7b02t #fc9002P#fca402a#fcbd02g#fcd202e'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - open= nametag_menu
+      '24':
+        material: NAME_TAG
+        stack: 1
+        name: '&6❤ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6❤&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= heart_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-heart_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6❤ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6❤&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% heart
+      '19':
+        material: NAME_TAG
+        stack: 1
+        name: '&6☻ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6☻&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= smile_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-smile_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6☻ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6☻&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% smile
+      '20':
+        material: NAME_TAG
+        stack: 1
+        name: '&6☽ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6☽&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= moon_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-moon_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6☽ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6☽&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% moon
+      '22':
+        material: NAME_TAG
+        stack: 1
+        name: '&6⚗ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6⚗&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= potion_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-potion_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6⚗ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6⚗&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% potion
+      '21':
+        material: NAME_TAG
+        stack: 1
+        name: '&6⛏ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to buy'
+        lore:
+        - '&a ♢ &8Price: &210$'
+        - '&a ♢ &8Preview: &7[ &6⛏&7 ]'
+        - ''
+        - '&8&m-----'
+        - '&7Make your name more'
+        - '&7unique in the chat with this tag'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to purchase.'
+        commands:
+        - buycommand= 10 set-data= miner_icon true %cp-player-name%
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-potion_icon%'
+          material: NAME_TAG
+          enchanted: true
+          name: '&6⛏ &7| #e5d600I#e5c600c#e5b700o#e5a400n &8 Click to Equip'
+          lore:
+          - '&a ♢ &8Price: &2Owned'
+          - '&a ♢ &8Preview: &7[ &6⛏&7 ]'
+          - ''
+          - '&8&m-----'
+          - '&7Make your name more'
+          - '&7unique in the chat with this tag'
+          - '&8&m---------------'
+          - '#FF9B00■ Left-Click to equip.'
+          commands:
+          - op= tags set %cp-player-name% miner
+      '40':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

@@ -1,0 +1,918 @@
+panels:
+  buy_items_shop:
+    perm: default
+    rows: 5
+    title: '&fSurvival Menu &8| &fShop'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '19': # -----------------------------------------------------------------------------------------------------------------------------------------------------
+        material: LIME_STAINED_GLASS_PANE
+        duplicate: "19-21"
+        stack: 1
+        name: '&2Confirm Purchase &8| &f%cp-data-selected_item_display_name% &6x1'
+        lore:
+        - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+        - '&cItem cannot be sold.'
+        commands:
+        - sound= ENTITY_VILLAGER_HURT
+        - msg= &7System &8>> &cShop Error. Please contact an andmin!
+        - cpc
+        has0: # BeehivesPro Upgrade Token
+          value0: '%cp-data-selected_item_name%'
+          compare0: beehivespro_upgrade_token
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&6Beehive Upgrade Token &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7You can use this on Beehive'
+          - '&7in order to upgrade it.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= beehivespro addtokens
+            %cp-player-name% 1
+          - cpc
+        has1: # Protection Stone 1
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_1
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f5 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$500'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 5 %cp-player-name% 1
+          - cpc
+        has2: # Protection Stone 2
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_2
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f10 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$1000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 10 %cp-player-name% 1
+          - cpc
+        has3: # Protection Stone 3
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_3
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f20 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 20 %cp-player-name% 1
+          - cpc
+        has4: # Protection Stone 4
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_4
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f30 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$3000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 30 %cp-player-name% 1
+          - cpc
+        has5: # Backpack
+          value0: '%cp-data-selected_item_name%'
+          compare0: backpack
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&eBackpack' 
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7Buy your own personal backpack,'
+          - '&7and have more space for your adventures.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= backpacks give %cp-player-name%
+          - cpc
+        has6: # Mob Arena Teleport HARD
+          value0: '%cp-data-selected_item_name%'
+          compare0: mob_arena_hard_teleport
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bMob Arena Teleport'
+          - ''
+          - '&8teleport cost: &e$800'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7Keep Inventory: &aEnabled'
+          - '&a◇ &7Pvp: &cDisabled'
+          - '&a◇ &7Loot: #f2ac57R#f08e49a#ee713br#ec532de'
+          - '&a◇ &7Difficulty: #f2ac57H#f08e49a#ee713br#ec532dd'
+          - '&a◇ &7Recommended squad: &f1 - 2'
+          - ''
+          - '&8&m-----'
+          - '&7Teleport to the mob arena and'
+          - '&7fight with monsters and loot'
+          - '&7tresures over time.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase and teleport.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= mvtp %cp-player-name% mob_arena_hard
+          - cpc
+        has7: # Redbull
+          value0: '%cp-data-selected_item_name%'
+          compare0: redbull
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʀᴇᴅʙᴜʟʟ'
+          - ''
+          - '&aLeft-Click: Buy: &c$350'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Jump I &8[&f10:00&8]'
+          - '&8 ● &7Speed III &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ʀᴇᴅʙᴜʟʟ","color":"white"}]'},CustomPotionEffects:[{Id:8,Duration:12000,Amplifier:0},{Id:1,Duration:12000,Amplifier:2}]} 1
+          - cpc
+        has8: # Coca Cola
+          value0: '%cp-data-selected_item_name%'
+          compare0: coca_cola
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴄᴏᴄᴀ ᴄᴏʟᴀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Glowing &8[&f10:00&8]'
+          - '&8 ● &7Haste IV &8[&f30:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ᴄᴏᴄᴀ ᴄᴏʟᴀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:24,Duration:12000,Amplifier:1},{Id:3,Duration:18000,Amplifier:2}]} 1
+          - cpc
+        has9: # gatorade
+          value0: '%cp-data-selected_item_name%'
+          compare0: gatorade
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fɢᴀᴛᴏʀᴀᴅᴇ'
+          - ''
+          - '&aLeft-Click: Buy: &c$900'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Fire resistance &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ɢᴀᴛᴏʀᴀᴅᴇ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:12,Duration:12000}]} 1
+          - cpc
+        has10: # monster
+          value0: '%cp-data-selected_item_name%'
+          compare0: monster
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴍᴏɴꜱᴛᴇʀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$200'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Night vision &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ᴍᴏɴꜱᴛᴇʀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:16,Duration:12000}]} 1
+          - cpc
+        has11: # buchanans
+          value0: '%cp-data-selected_item_name%'
+          compare0: buchanans
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʙᴜᴄʜᴀɴᴀɴꜱ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Strength II &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ʙᴜᴄʜᴀɴᴀɴꜱ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:5,Duration:12000,Amplifier:1}]} 1
+          - cpc
+      '20': # -----------------------------------------------------------------------------------------------------------------------------------------------------
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: '&2Confirm Purchase &8| &f%cp-data-selected_item_display_name% &6x1'
+        lore:
+        - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+        - '&cItem cannot be sold.'
+        commands:
+        - sound= ENTITY_VILLAGER_HURT
+        - msg= &7System &8>> &cShop Error. Please contact an andmin!
+        - cpc
+        has0: # BeehivesPro Upgrade Token
+          value0: '%cp-data-selected_item_name%'
+          compare0: beehivespro_upgrade_token
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&6Beehive Upgrade Token &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7You can use this on Beehive'
+          - '&7in order to upgrade it.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= beehivespro addtokens
+            %cp-player-name% 1
+          - cpc
+        has1: # Protection Stone 1
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_1
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f5 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$500'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 5 %cp-player-name% 1
+          - cpc
+        has2: # Protection Stone 2
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_2
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f10 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$1000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 10 %cp-player-name% 1
+          - cpc
+        has3: # Protection Stone 3
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_3
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f20 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 20 %cp-player-name% 1
+          - cpc
+        has4: # Protection Stone 4
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_4
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f30 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$3000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 30 %cp-player-name% 1
+          - cpc
+        has5: # Backpack
+          value0: '%cp-data-selected_item_name%'
+          compare0: backpack
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&eBackpack' 
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7Buy your own personal backpack,'
+          - '&7and have more space for your adventures.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= backpacks give %cp-player-name%
+          - cpc
+        has6: # Mob Arena Teleport HARD
+          value0: '%cp-data-selected_item_name%'
+          compare0: mob_arena_hard_teleport
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bMob Arena Teleport'
+          - ''
+          - '&8teleport cost: &e$800'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7Keep Inventory: &aEnabled'
+          - '&a◇ &7Pvp: &cDisabled'
+          - '&a◇ &7Loot: #f2ac57R#f08e49a#ee713br#ec532de'
+          - '&a◇ &7Difficulty: #f2ac57H#f08e49a#ee713br#ec532dd'
+          - '&a◇ &7Recommended squad: &f1 - 2'
+          - ''
+          - '&8&m-----'
+          - '&7Teleport to the mob arena and'
+          - '&7fight with monsters and loot'
+          - '&7tresures over time.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase and teleport.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= mvtp %cp-player-name% mob_arena_hard
+          - cpc
+        has7: # Redbull
+          value0: '%cp-data-selected_item_name%'
+          compare0: redbull
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʀᴇᴅʙᴜʟʟ'
+          - ''
+          - '&aLeft-Click: Buy: &c$350'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Jump I &8[&f10:00&8]'
+          - '&8 ● &7Speed III &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ʀᴇᴅʙᴜʟʟ","color":"white"}]'},CustomPotionEffects:[{Id:8,Duration:12000,Amplifier:0},{Id:1,Duration:12000,Amplifier:2}]} 1
+          - cpc
+        has8: # Coca Cola
+          value0: '%cp-data-selected_item_name%'
+          compare0: coca_cola
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴄᴏᴄᴀ ᴄᴏʟᴀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Glowing &8[&f10:00&8]'
+          - '&8 ● &7Haste IV &8[&f30:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ᴄᴏᴄᴀ ᴄᴏʟᴀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:24,Duration:12000,Amplifier:1},{Id:3,Duration:18000,Amplifier:2}]} 1
+          - cpc
+        has9: # gatorade
+          value0: '%cp-data-selected_item_name%'
+          compare0: gatorade
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fɢᴀᴛᴏʀᴀᴅᴇ'
+          - ''
+          - '&aLeft-Click: Buy: &c$900'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Fire resistance &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ɢᴀᴛᴏʀᴀᴅᴇ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:12,Duration:12000}]} 1
+          - cpc
+        has10: # monster
+          value0: '%cp-data-selected_item_name%'
+          compare0: monster
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴍᴏɴꜱᴛᴇʀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$200'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Night vision &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ᴍᴏɴꜱᴛᴇʀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:16,Duration:12000}]} 1
+          - cpc
+        has11: # buchanans
+          value0: '%cp-data-selected_item_name%'
+          compare0: buchanans
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʙᴜᴄʜᴀɴᴀɴꜱ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Strength II &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ʙᴜᴄʜᴀɴᴀɴꜱ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:5,Duration:12000,Amplifier:1}]} 1
+          - cpc
+      '21': # -----------------------------------------------------------------------------------------------------------------------------------------------------
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: '&2Confirm Purchase &8| &f%cp-data-selected_item_display_name% &6x1'
+        lore:
+        - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+        - '&cItem cannot be sold.'
+        commands:
+        - sound= ENTITY_VILLAGER_HURT
+        - msg= &7System &8>> &cShop Error. Please contact an andmin!
+        - cpc
+        has0: # BeehivesPro Upgrade Token
+          value0: '%cp-data-selected_item_name%'
+          compare0: beehivespro_upgrade_token
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&6Beehive Upgrade Token &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$%cp-data-selected_item_buy_price%'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7You can use this on Beehive'
+          - '&7in order to upgrade it.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= beehivespro addtokens
+            %cp-player-name% 1
+          - cpc
+        has1: # Protection Stone 1
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_1
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f5 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$500'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 5 %cp-player-name% 1
+          - cpc
+        has2: # Protection Stone 2
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_2
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f10 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$1000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 10 %cp-player-name% 1
+          - cpc
+        has3: # Protection Stone 3
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_3
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f20 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 20 %cp-player-name% 1
+          - cpc
+        has4: # Protection Stone 4
+          value0: '%cp-data-selected_item_name%'
+          compare0: protection_stone_4
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bProtection Stone &7[&f30 blocks width&7] &ax1'
+          - ''
+          - '&aLeft-Click: Buy: &c$3000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7The End World'
+          - ''
+          - '&8&m-----'
+          - '&7Place this on the ground in'
+          - '&7order to protect your valueable'
+          - '&7stuff form other players.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= protectionstones give 30 %cp-player-name% 1
+          - cpc
+        has5: # Backpack
+          value0: '%cp-data-selected_item_name%'
+          compare0: backpack
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&eBackpack' 
+          - ''
+          - '&aLeft-Click: Buy: &c$2000'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&8&m-----'
+          - '&7Buy your own personal backpack,'
+          - '&7and have more space for your adventures.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= backpacks give %cp-player-name%
+          - cpc
+        has6: # Mob Arena Teleport HARD
+          value0: '%cp-data-selected_item_name%'
+          compare0: mob_arena_hard_teleport
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '&bMob Arena Teleport'
+          - ''
+          - '&8teleport cost: &e$800'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7Keep Inventory: &aEnabled'
+          - '&a◇ &7Pvp: &cDisabled'
+          - '&a◇ &7Loot: #f2ac57R#f08e49a#ee713br#ec532de'
+          - '&a◇ &7Difficulty: #f2ac57H#f08e49a#ee713br#ec532dd'
+          - '&a◇ &7Recommended squad: &f1 - 2'
+          - ''
+          - '&8&m-----'
+          - '&7Teleport to the mob arena and'
+          - '&7fight with monsters and loot'
+          - '&7tresures over time.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to purchase and teleport.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= mvtp %cp-player-name% mob_arena_hard
+          - cpc
+        has7: # Invisibility Potion
+          value0: '%cp-data-selected_item_name%'
+          compare0: redbull
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʀᴇᴅʙᴜʟʟ'
+          - ''
+          - '&aLeft-Click: Buy: &c$350'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Jump I &8[&f10:00&8]'
+          - '&8 ● &7Speed III &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ʀᴇᴅʙᴜʟʟ","color":"white"}]'},CustomPotionEffects:[{Id:8,Duration:12000,Amplifier:0},{Id:1,Duration:12000,Amplifier:2}]} 1
+          - cpc
+        has8: # Coca Cola
+          value0: '%cp-data-selected_item_name%'
+          compare0: coca_cola
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴄᴏᴄᴀ ᴄᴏʟᴀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Glowing &8[&f10:00&8]'
+          - '&8 ● &7Haste IV &8[&f30:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"blue"},{"text":"ᴄᴏᴄᴀ ᴄᴏʟᴀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:24,Duration:12000,Amplifier:1},{Id:3,Duration:18000,Amplifier:2}]} 1
+          - cpc
+        has9: # gatorade
+          value0: '%cp-data-selected_item_name%'
+          compare0: gatorade
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fɢᴀᴛᴏʀᴀᴅᴇ'
+          - ''
+          - '&aLeft-Click: Buy: &c$900'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Fire resistance &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ɢᴀᴛᴏʀᴀᴅᴇ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:12,Duration:12000}]} 1
+          - cpc
+        has10: # monster
+          value0: '%cp-data-selected_item_name%'
+          compare0: monster
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fᴍᴏɴꜱᴛᴇʀ'
+          - ''
+          - '&aLeft-Click: Buy: &c$200'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Night vision &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ᴍᴏɴꜱᴛᴇʀ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:16,Duration:12000}]} 1
+          - cpc
+        has11: # buchanans
+          value0: '%cp-data-selected_item_name%'
+          compare0: buchanans
+          material: LIME_STAINED_GLASS_PANE
+          name: '&a✔ &8| &2&lCONFIRM PURCHASE'
+          lore:
+          - '#f4a6f2🧪 &8| &fʙᴜᴄʜᴀɴᴀɴꜱ'
+          - ''
+          - '&aLeft-Click: Buy: &c$700'
+          - '&cItem cannot be sold.'
+          - ''
+          - '&fᴇꜰꜰᴇᴄᴛꜱ:'
+          - '&8 ● &7Strength II &8[&f10:00&8]'
+          - ''
+          - '#FF9B00■ Left-Click to purchase.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - buycommand= %cp-data-selected_item_buy_price% console= give %cp-player-name% potion{CustomPotionColor:7894760,display:{Name:'[{"text":"🧪","italic":false,"color":"#ff99ff"},{"text":" "},{"text":"|","color":"dark_gray"},{"text":" ","color":"dark_gray"},{"text":"ʙᴜᴄʜᴀɴᴀɴꜱ","color":"white"},{"text":"","color":"white"}]'},CustomPotionEffects:[{Id:5,Duration:12000,Amplifier:1}]} 1
+          - cpc
+      '23': # -----------------------------------------------------------------------------------------------------------------------------------------------------
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the previous page.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to return.'
+        commands:
+        - open= %cp-data-previous_page%
+        - sound= UI_BUTTON_CLICK
+      '24':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the previous page.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to return.'
+        commands:
+        - open= %cp-data-previous_page%
+        - sound= UI_BUTTON_CLICK
+      '25':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the previous page.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to return.'
+        commands:
+        - open= %cp-data-previous_page%
+        - sound= UI_BUTTON_CLICK
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

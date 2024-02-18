@@ -1,0 +1,141 @@
+panels:
+  ranks_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu &8| &fRanks'
+    commands:
+    - ranks
+    - rank
+    - ranklist
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '38':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '39':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '40':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '41':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '42':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '14':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyYmY5ODY0NzIwZDg3ZmQwNmI4NGVmYTgwYjc5NWM0OGVkNTM5YjE2NTIzYzNiMWYxOTkwYjQwYzAwM2Y2YiJ9fX0=
+        stack: 1 # Mvp Rank
+        name: '#fbd309☄ &8| #fbd309M#fbb20av#fa910ap#fa700b Rank'
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ #afff09M#bdfd0cV#cbfa0eP &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &24 &7lvl'
+        - '&a ♢ &7Fly Inside Claim'
+        - '&a ♢ &7Max &23 &7Jobs'
+        - '&a ♢ &7Quick Shop Change Price'
+        - '&a ♢ &7Quick Shop Change Item'
+        - '&a ♢ &7Quick Shop Change Amount'
+        - '&a ♢ &7Ability to set &26 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #afff09M#bdfd0cV#cbfa0eP &7included.'
+        - ''
+      '13':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwNjJjYzk4ZWJkYTcyYTZhNGI4OTc4M2FkY2VmMjgxNWI0ODNhMDFkNzNlYTg3YjNkZjc2MDcyYTg5ZDEzYiJ9fX0=
+        stack: 1 # Vip Rank
+        name: '#ef14ff⚗ &8| #ef14ffV#dc11fai#c80df5p#b50af0 Rank'
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ #eb05feV#dc04fbI#cd03f8P &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &23 &7lvl'
+        - '&a ♢ &7Fly Inside Claim'
+        - '&a ♢ &7Max &22 &7Jobs'
+        - '&a ♢ &7Quick Shop Change Price'
+        - '&a ♢ &7Quick Shop Change Item'
+        - '&a ♢ &7Quick Shop Change Amount'
+        - '&a ♢ &7Ability to set &25 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #eb05feV#dc04fbI#cd03f8P &7included.'
+        - ''
+      '12':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFmN2ExYjMwYjM0ZTdlZDAxODgxYTczZWI2NjY3N2QyNjY2MDJkNmFkMzJjMDdjZjZjYzc1ZWU4ZmEwYmZkZiJ9fX0=
+        stack: 1 # Voter Rank
+        name: '#f9ff0f☻ &8| #f9ff0fV#faf60do#fbed0bt#fce409e#fcdb08 Rank'
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ &f#fafa74V#f8e05eO#f5c648T#f3ab32E#f0911cR &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &22 &7lvl'
+        - '&a ♢ &7Ability to set &24 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #fafa74V#f8e05eO#f5c648T#f3ab32E#f0911cR &7included.'
+        - ''
+      '11':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0=
+        stack: 1 #Senior Rank
+        name: '#28ffe4🏹 &8| #28ffe4S#24f4e7e#20e9ean#1bddedi#17d2f0o#13c7f3r#0fbcf6 Rank'
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ &f#84d8eaS#72cbe9E#5fbfe7N#4db2e6I#3aa6e4O#2899e3R&f &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &21 &7lvl'
+        - '&a ♢ &7Ability to set &23 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #84d8eaS#72cbe9E#5fbfe7N#4db2e6I#3aa6e4O#2899e3R &7included.'
+        - ''
+      '15':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FkOGNjOTgyNzg2ZmI0ZDQwYjBiNmU2NGE0MWYwZDk3MzZmOWMyNmFmZmI4OThmNGE3ZmFlYTg4Y2NmODk5NyJ9fX0=
+        stack: 1 # Vip+ Rank
+        name: '#ef14ff⚗ &8| #ef14ffV#dc11fai#c80df5p#b50af0&f+ #b50af0Rank'
+        enchanted: true
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ #eb05feV#dc04fbI#cd03f8P&f+ &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &25 &7lvl'
+        - '&a ♢ &7Fly Inside Claim'
+        - '&a ♢ &7Max &23 &7Jobs'
+        - '&a ♢ &7Quick Shop Change Price'
+        - '&a ♢ &7Quick Shop Change Item'
+        - '&a ♢ &7Quick Shop Change Amount'
+        - '&a ♢ &7Ability to set &27 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #eb05feV#dc04fbI#cd03f8P&f+ &7included.'
+        - ''
+      '22':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YzYwY2M4YzFlMGZhMjcyNjc2ZDFjNmI3NDdiYzU4ZTdlMjJhODMyNGNlZjY5ZjIzYmIxMGU0OTJhNzZlOSJ9fX0=
+        stack: 1 # Mvp+ Rank
+        name: '#fbd309☄ &8| #fbd309M#fbb20av#fa910ap#fa700b&f+ #fa700bRank'
+        enchanted: true
+        lore:
+        - ''
+        - '&a ♢ &7Priority Queue'
+        - '&a ♢ #afff09M#bdfd0cV#cbfa0eP&f+ &7Prefix in-game.'
+        - '&a ♢ &7Vault Storage Upgrade &25 &7lvl'
+        - '&a ♢ &7Fly Inside Claim'
+        - '&a ♢ &7Max &23 &7Jobs'
+        - '&a ♢ &7Quick Shop Change Price'
+        - '&a ♢ &7Quick Shop Change Item'
+        - '&a ♢ &7Quick Shop Change Amount'
+        - '&a ♢ &7Ability to set &28 &7homes.'
+        - ''
+        - '&a ♢ &7Kit #afff09M#bdfd0cV#cbfa0eP&f+ &7included.'
+        - ''
+
+# ##################################
+# ##########################################
+# ############# SuperG Setups ##############
+# ################# 2022 ###################
+# ##########################################
+# ###### Official Discord Support ##########
+# ## { https://discord.io/supergsetups } ###
+# ########################################
+# ##################################

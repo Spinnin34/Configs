@@ -1,0 +1,384 @@
+panels:
+  world_menu:
+    commands-on-open:
+    - add-data= played_survival false %cp-player-name%
+    commands:
+    - resource
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu &8| &fTeleports'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '38':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '39':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '40':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '41':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '42':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '21':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA3MTU0OTFiZjJiODVjMjc2ZmZiNzAxN2JhY2I0NDNjNzg5YjBlNWQ0NjVmYzMzYjVmOTkzYmQzYjQyMGZiZCJ9fX0=
+        stack: 1 # Nether
+        name: '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r &8| #ff8282L#f66868O#ed4e4eC#e43434K#db1a1aE#d20000D '
+        lore:
+        - '&8command: /warp'
+        - ''
+        - '&fINFO:'
+        - '&a◇ &7World Border: &e10k &7x &e10k'
+        - '&a◇ &7Land Claiming: &aEnabled'
+        - '&a◇ &7Keep Inventory: &cDisabled'
+        - '&a◇ &7Day Cycle: &aEnabled'
+        - '&a◇ &7Pvp: &aEnabled'
+        - '&a◇ &7Difficulty: &eNormal'
+        - ''
+        - '&8&m-----'
+        - '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r &7is Hell like dimension'
+        - '&7filled with many dangerous creatures.'
+        - '&7You are welcome here, as long as you'
+        - '&7can survive...'
+        - '&8&m---------------'
+        - ''
+        - '&c⚠ &8| &4UNLOCK THE WORLD:'
+        - '&7This world is locked. To unlock it'
+        - '&7You will need to complete the nether quests.'
+        commands:
+        - msg= &cYou are not Unlocked this world yet.&7 To unlock it you need to complete
+          the Nether Quests!
+        - sound= ENTITY_VILLAGER_HURT
+        has0:
+          value0: '%player_world%'
+          compare0: world_nether
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA3MTU0OTFiZjJiODVjMjc2ZmZiNzAxN2JhY2I0NDNjNzg5YjBlNWQ0NjVmYzMzYjVmOTkzYmQzYjQyMGZiZCJ9fX0=
+          enchanted: true
+          name: '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r'
+          lore:
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e10k &7x &e10k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eNormal'
+          - ''
+          - '&8&m-----'
+          - '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r &7is Hell like dimension'
+          - '&7filled with many dangerous creatures.'
+          - '&7You are welcome here, as long as you'
+          - '&7can survive...'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to teleport in this world.'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+          - msg= &7System &8>> &cYou are already in this world!
+        has1:
+          value0: '%cp-player-name% HASPERM'
+          compare0: WorldPermission.nether
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA3MTU0OTFiZjJiODVjMjc2ZmZiNzAxN2JhY2I0NDNjNzg5YjBlNWQ0NjVmYzMzYjVmOTkzYmQzYjQyMGZiZCJ9fX0=
+          enchanted: true
+          name: '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r'
+          lore:
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e10k &7x &e10k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eNormal'
+          - ''
+          - '&8&m-----'
+          - '#fa3a3aN#f9462ee#f85123t#f65d17h#f5680ce#f47400r &7is Hell like dimension'
+          - '&7filled with many dangerous creatures.'
+          - '&7You are welcome here, as long as you'
+          - '&7can survive...'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to teleport in this world.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - send= /nether
+          - msg= &7System &8>> &aTeleporting to Nether!
+      '22':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0=
+        stack: 1
+        name: '#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d &8| #ff8282L#f66868O#ed4e4eC#e43434K#db1a1aE#d20000D' # The End [Locked]
+        commands:
+        - sound= ENTITY_VILLAGER_HURT
+        lore: # The End
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e10k &7x &e10k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eNormal'
+          - ''
+          - '&8&m-----'
+          - '&7#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d &7is a dimension
+            filled with'
+          - '&7dangerous creatures. Here your'
+          - '&7only friend is the land you can step on.'
+          - '&8&m---------------'
+          - ''
+          - '&c⚠ &8| &4UNLOCK THE WORLD:'
+          - '&7This world is locked. To unlock it'
+          - '&7You will need to complete the end quests.'
+        has0:
+          value0: '%player_world%'
+          compare0: the_end
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0=
+          enchanted: true
+          name: '#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d'
+          lore:
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e10k &7x &e10k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eNormal'
+          - ''
+          - '&8&m-----'
+          - '&7#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d &7is a dimension
+            filled with'
+          - '&7dangerous creatures. Here your'
+          - '&7only friend is the land you can step on.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to teleport in this world.'
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+          - msg= &7System &8>> &cYou are already in this world!
+        has1:
+          value0: '%cp-player-name% HASPERM'
+          compare0: join.end
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlZDM2ODgyMWI0NjZkMzliZGY1N2U3OGZjMWRkZjc1ZWM5NjZjMTY5NTVlMDJlNTk0OGJlN2FkZmQxZmU1NSJ9fX0=
+          enchanted: true
+          name: '#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d'
+          lore:
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e10k &7x &e10k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eNormal'
+          - ''
+          - '&8&m-----'
+          - '&7#ba1bfeT#ad17f5h#9f12ece#920ee3 #8409daE#7705d1n#6900c8d &7is a dimension
+            filled with'
+          - '&7dangerous creatures. Here your'
+          - '&7only friend is the land you can step on.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to teleport in this world.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - send= /thend
+          - msg= &7System &8>> &aTeleporting to The End!
+      '23':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ==
+        stack: 1
+        name: '#7bd8ffO#6cd2ffv#5dccffe#4dc5ffr#3ebfffw#2fb9feo#20b3fer#10acfel#01a6fed
+          &8| #ff7777R#fa6e6eE#f56565S#f05c5cO#eb5252U#e64949R#e14040C#db3737E#d62e2e
+          #d12525W#cc1b1bO#c71212R#c20909L#bd0000D' # Overworld | RESOURCE WORLD
+        lore:
+        - '&8command: /warp'
+        - ''
+        - '&c⚠ &8| &4&lWARNING'
+        - '&4● &7Do not leave anything important!'
+        - '&4● &7This world will reset after'
+        - '&4● &7%rw_world%'
+        - ''
+        - '&fINFO:'
+        - '&a◇ &7World Border: &e10k &7x &e10k'
+        - '&a◇ &7Land Claiming: &cDisabled'
+        - '&a◇ &7Keep Inventory: &aEnabled'
+        - '&a◇ &7Day Cycle: &cDisabled'
+        - '&a◇ &7Pvp: &cDisabled'
+        - '&a◇ &7Difficulty: &ePeaceful'
+        - ''
+        - '&8&m-----'
+        - '&7Teleport to a random location in'
+        - '&7the resource world, and gather '
+        - '&7resources for your creations.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to teleport in this world.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - send= /resource tp
+      '45':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY4MTIxMTJkZDE4N2U3YzhkZGI1YzNiOGU4NTRlODJmMTkxOTc0MTRhOGNkYjU0MjAyMWYxYTQ5MTg5N2U1MyJ9fX0=
+        stack: 1
+        name: '#0ab8faH#0bb3fao#0baffbu#0caafbs#0ca6fbe#0da1fc #0e9cfcT#0e98fce#0f93fcl#108efde#108afdp#1185fdo#1181fer#127cfet'
+        lore:
+        - '&8command: /homes'
+        - ''
+        - '&4⚠ &8| &cWARNING'
+        - '&c● &7This is a one-way teleport!'
+        - '&c● &7You can''t return to your'
+        - '&c● &7Last location if you didn''t saved it.'
+        - ''
+        - '&8&m-----'
+        - '&7Quick teleport to your home/s.'
+        - '&7Useful for long adventures, or'
+        - '&7Just saving your location.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to open the menu.'
+        commands:
+        - homes
+      '53':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNiN2MyMWNjNDNkYzE3Njc4ZWU2ZjE2NTkxZmZhYWIxZjYzN2MzN2Y0ZjZiYmQ4Y2VhNDk3NDUxZDc2ZGI2ZCJ9fX0=
+        stack: 1
+        name: '#ff7900R#ff7503a#ff7105n#ff6d08d#ff690bo#ff650dm#ff6110 #fe5d13T#fe5915e#fe5518l#fe511ae#fe4d1dp#fe4920o#fe4522r#fe4125t'
+        lore:
+        - '&8command: /rtp'
+        - ''
+        - '&8&m-----'
+        - '&7telport to random location'
+        - '&7in your current world.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to RTP in this world.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - open= rtp_warning_menu
+        has0:
+          value0: NOT %player_world%
+          compare0: world
+          value1: NOT %player_world%
+          compare1: world_nether
+          value2: NOT %player_world%
+          compare2: resource_world
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNiN2MyMWNjNDNkYzE3Njc4ZWU2ZjE2NTkxZmZhYWIxZjYzN2MzN2Y0ZjZiYmQ4Y2VhNDk3NDUxZDc2ZGI2ZCJ9fX0=
+          enchanted: true
+          name: '#ff7900R#ff7503a#ff7105n#ff6d08d#ff690bo#ff650dm#ff6110 #fe5d13T#fe5915e#fe5518l#fe511ae#fe4d1dp#fe4920o#fe4522r#fe4125t'
+          lore:
+          - '&8command: /rtp'
+          - ''
+          - '&6⚠ &8| &6&lATENTION'
+          - '&c● &7This world does not'
+          - '&c● &7support Random Teleport!'
+          - ''
+          - '&fSuppored Worlds:'
+          - '&8● &7Survival World'
+          - '&8● &7Nether World'
+          - '&8● &7Resource World'
+          - ''
+          commands:
+          - sound= ENTITY_VILLAGER_HURT
+          - msg= &7System &8>> &cThis world does not support Random Teleport!
+      '20':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNzdlODcxZDkxYjdmZWEyNGIxZjY4MDhlMDg4ZDdiODQyZGE1MTZmNjM1NmNlOTE2MTM0OTQ0MzFhZThhMCJ9fX0=
+        stack: 1 # Overworld Teleport
+        name: '#7bd8ffO#6cd2ffv#5dccffe#4dc5ffr#3ebfffw#2fb9feo#20b3fer#10acfel#01a6fed'
+        lore:
+        - '&8command: /warp'
+        - ''
+        - '&fINFO:'
+        - '&a◇ &7World Border: &e15k &7x &e15k'
+        - '&a◇ &7Land Claiming: &aEnabled'
+        - '&a◇ &7Keep Inventory: &cDisabled'
+        - '&a◇ &7Day Cycle: &aEnabled'
+        - '&a◇ &7Pvp: &aEnabled'
+        - '&a◇ &7Difficulty: &eHard'
+        - ''
+        - '&8&m-----'
+        - '&7Start your survival jurney'
+        - '&7and telport to random location'
+        - '&7in the survival world.'
+        - '&8&m---------------'
+        - ''
+        - '#FF9B00■ Left-Click to teleport in this world.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - send= /survival
+        has0:
+          value0: 'true'
+          compare0: '%cp-data-played_survival%'
+          material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwNzdlODcxZDkxYjdmZWEyNGIxZjY4MDhlMDg4ZDdiODQyZGE1MTZmNjM1NmNlOTE2MTM0OTQ0MzFhZThhMCJ9fX0=
+          enchanted: true
+          name: '#7bd8ffO#6cd2ffv#5dccffe#4dc5ffr#3ebfffw#2fb9feo#20b3fer#10acfel#01a6fed'
+          lore:
+          - '&8command: /warp'
+          - ''
+          - '&fINFO:'
+          - '&a◇ &7World Border: &e15k &7x &e15k'
+          - '&a◇ &7Land Claiming: &aEnabled'
+          - '&a◇ &7Keep Inventory: &cDisabled'
+          - '&a◇ &7Day Cycle: &aEnabled'
+          - '&a◇ &7Pvp: &aEnabled'
+          - '&a◇ &7Difficulty: &eHard'
+          - ''
+          - '&8&m-----'
+          - '&7Continue your journey in the survival'
+          - '&7world from your last location.'
+          - '&8&m---------------'
+          - ''
+          - '#FF9B00■ Left-Click to teleport in this world.'
+          commands:
+          - sound= UI_BUTTON_CLICK
+          - send= /survival
+      '24':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY3ZWFmMTgyY2VmMDFhN2VjYmEyMjZkNGJjZTlhY2U3N2E1MjUzYWM5NGFhMTY2YTliMzFjZTdmYmNhODI0NSJ9fX0=
+        stack: 1
+        name: '#fc3737Re#fc4737tu#fc5e37rn #fc6f37to #fc7c37Sp#fc7c37aw#fc9637n'
+        lore:
+        - '&8Command: /spawn'
+        - ''
+        - '&8&m-----'
+        - '&7Quick teleport to the'
+        - '&7server spawn.'
+        - '&8&m---------------'
+        - '#FF9B00■ Left-Click to teleport.'
+        commands:
+        - 'send= /spawn'
+        - 'cpc'
+
+# ##################################
+# ##########################################
+# ############# SuperG Setups ##############
+# ################# 2022 ###################
+# ##########################################
+# ###### Official Discord Support ##########
+# ## { https://discord.io/supergsetups } ###
+# ########################################
+# ##################################

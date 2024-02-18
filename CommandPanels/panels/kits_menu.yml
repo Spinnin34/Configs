@@ -1,0 +1,199 @@
+panels:
+  kits_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu &8| &fKits'
+    commands: 
+    - 'kits'
+    - 'kit'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '38':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '39':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '40':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '41':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '42':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Back to the main menu'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Right-Click to open the menu.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '15':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyYmY5ODY0NzIwZDg3ZmQwNmI4NGVmYTgwYjc5NWM0OGVkNTM5YjE2NTIzYzNiMWYxOTkwYjQwYzAwM2Y2YiJ9fX0=
+        stack: 1 # Mvp Kit
+        name: '#fbd309☄ &8| #fbd309M#fbb20av#fa910ap#fa700b #f94f0cK#f92e0ci#f80d0dt'
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aMVP'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_mvp%'
+        - ''
+        - '&8&m-----'
+        - '&7Get Yourself a #fbd309M#fbb20aV#fa910aP#fa700b &7start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview mvp
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim mvp
+        - left= cpc
+      '14':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwNjJjYzk4ZWJkYTcyYTZhNGI4OTc4M2FkY2VmMjgxNWI0ODNhMDFkNzNlYTg3YjNkZjc2MDcyYTg5ZDEzYiJ9fX0=
+        stack: 1 # Vip Kit
+        name: '#ef14ff⚗ &8| #ef14ffV#dc11fai#c80df5p#b50af0 #a207eaK#8e03e5i#7b00e0t'
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aVIP'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_vip%'
+        - ''
+        - '&8&m-----'
+        - '&7Get Yourself a #ef14ffV#dc11fai#c80df5p#b50af0 &7start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview vip
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim vip
+        - left= cpc
+      '13':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFmN2ExYjMwYjM0ZTdlZDAxODgxYTczZWI2NjY3N2QyNjY2MDJkNmFkMzJjMDdjZjZjYzc1ZWU4ZmEwYmZkZiJ9fX0=
+        stack: 1 # Vip Kit
+        name: '#f9ff0f☻ &8| #f9ff0fV#faf60do#fbed0bt#fce409e#fcdb08 #fdd206K#fec904i#ffc002t'
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aVote Master'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_vote%'
+        - ''
+        - '&8&m-----'
+        - '&7#f9ff0fV#faf60do#fbed0bt#fce409e#fcdb08 &7for the server and'
+        - '&7Yourself a good start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview vote
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim vote
+        - left= cpc
+      '11':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY0NDBhYjdjMjgyMWI2OTEzZTU0OTA1YmE1MTRjZmFiYWY0ZDAyNTYxOGYzMjg3NTliNTkwNjk3NGM3ZTdjYiJ9fX0=
+        stack: 1 # Starter Kit
+        name: '#9efd2b⛏ &8| #9efd2bS#a5fd27t#abfd23a#b2fe1fr#b8fe1bt#bffe16e#c5fe12r#ccfe0e
+          #d2ff0aK#d9ff06i#dfff02t'
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aNone'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_player%'
+        - ''
+        - '&8&m-----'
+        - '&7Get yourself a good start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview player
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim player
+        - left= cpc
+      '12':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFhNzg1OTE2ZDJkMTdjYTBlYTJhZDIzZDgwMjQ3YzdjNTAyMTQ0MzkwM2JiYWI3YjI0Yjc5MzRiNmEzNjFhYiJ9fX0=
+        stack: 1
+        name: '#28ffe4🏹 &8| #28ffe4S#24f4e7e#20e9ean#1bddedi#17d2f0o#13c7f3r#0fbcf6
+          #0ab0f9K#06a5fci#029afft'
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aSenior'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_senior%'
+        - ''
+        - '&8&m-----'
+        - '&7Get yourself a good start'
+        - '&7For your #28ffe4S#24f4e7e#20e9ean#1bddedi#17d2f0o#13c7f3r#0fbcf6 &7survival
+          journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview senior
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim senior
+        - left= cpc
+      '21':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FkOGNjOTgyNzg2ZmI0ZDQwYjBiNmU2NGE0MWYwZDk3MzZmOWMyNmFmZmI4OThmNGE3ZmFlYTg4Y2NmODk5NyJ9fX0=
+        stack: 1 # Vip+ Kit
+        name: '#ef14ff⚗ &8| #ef14ffV#dc11fai#c80df5p#b50af0&f+ #a207eaK#8e03e5i#7b00e0t'
+        enchanted: true
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aVIP&f+'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_vip+%'
+        - ''
+        - '&8&m-----'
+        - '&7Get Yourself a #ef14ffV#dc11fai#c80df5p#b50af0&f+ &7start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview vip+
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim vip+
+        - left= cpc
+      '23':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg5YzYwY2M4YzFlMGZhMjcyNjc2ZDFjNmI3NDdiYzU4ZTdlMjJhODMyNGNlZjY5ZjIzYmIxMGU0OTJhNzZlOSJ9fX0=
+        stack: 1 # Mvp+ Kit
+        name: '#fbd309☄ &8| #fbd309M#fbb20av#fa910ap#fa700b&f+ #f94f0cK#f92e0ci#f80d0dt'
+        enchanted: true
+        lore:
+        - ''
+        - '&a ♢ &7Rank Needed: &aMVP&f+'
+        - '&a ♢ &7Cooldown: &a%playerkits_cooldown_mvp+%'
+        - ''
+        - '&8&m-----'
+        - '&7Get Yourself a #fbd309M#fbb20aV#fa910aP#fa700b&f+ &7start'
+        - '&7For your survival journey.'
+        - '&8&m---------------'
+        - '#FF9B00■ Right-Click to preview the items.'
+        - '#f76700■ Left-Click to claim the kit.'
+        commands:
+        - right= op= kit preview mvp+
+        - sound= UI_BUTTON_CLICK
+        - left= kit claim mvp+
+        - left= cpc
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

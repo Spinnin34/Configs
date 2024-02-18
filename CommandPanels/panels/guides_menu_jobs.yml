@@ -1,0 +1,120 @@
+panels:
+  guides_menu_job:
+    perm: default
+    rows: 4
+    title: '&fGuides - Jobs'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: CHEST
+        stack: 1
+        name: '&7What is that?'
+        lore:
+        - ''
+        - '&fYou can work jobs to get money.' 
+        - ''
+      '1':
+        material: CHEST
+        stack: 1
+        name: '&7Miner Job'
+        lore:
+        - ''
+        - '&fYou can earn money while mining'
+        - '&fwhen you work this job.'
+        - ''
+      '2':
+        material: CHEST
+        stack: 1
+        name: '&7Fisherman Job'
+        lore:
+        - ''
+        - '&fYou can earn money while fishing'
+        - '&fwhen you work this job.'
+        - ''
+      '3':
+        material: CHEST
+        stack: 1
+        name: '&7Farmer Job'
+        lore:
+        - ''
+        - '&fYou can earn money while farming'
+        - '&fwhen you work this job.'
+        - ''
+      '4':
+        material: CHEST
+        stack: 1
+        name: '&7Woodcutter Job'
+        lore:
+        - ''
+        - '&fYou can earn money while cutting trees'
+        - '&fwhen you work this job.'
+        - ''
+      '5':
+        material: CHEST
+        stack: 1
+        name: '&7Hunter Job'
+        lore:
+        - ''
+        - '&fYou can earn money while hunting mobs'
+        - '&fwhen you work this job.'
+        - ''
+      '6':
+        material: CHEST
+        stack: 1
+        name: '&7Builder Job'
+        lore:
+        - ''
+        - '&fYou can earn money while building'
+        - '&fstructures when you work this job.'
+        - ''
+      '6':
+        material: CHEST
+        stack: 1
+        name: '&7Enchanter Job'
+        lore:
+        - ''
+        - '&fYou can earn money while enchanting'
+        - '&fitems when you work this job.'
+        - ''
+      '7':
+        material: CHEST
+        stack: 1
+        name: '&7Explorer Job'
+        lore:
+        - ''
+        - '&fYou can earn money while discovering'
+        - '&fnew places when you work this job.'
+        - ''
+      '20':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '21':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '22':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' ' 
+      '23':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '24':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '31':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Go Back.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Right-Click to open the menu.'
+        commands:
+        - open= guides_menu
+        - sound= UI_BUTTON_CLICK

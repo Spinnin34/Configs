@@ -1,0 +1,192 @@
+panels:
+  jobs_menu:
+    perm: default
+    rows: 6
+    title: '&fSurvival Menu &8| &fJobs'
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '40':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '41':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '42':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '49':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00Volver'
+        lore:
+        - '&8------'
+        - '&7Volver al menú principal'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Haga clic derecho para abrir el menú.'
+        commands:
+        - open= main_menu
+        - sound= UI_BUTTON_CLICK
+      '11':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI5ZmE4Y2Q4NGFjMTI1MDIxZDYyMDFhMTQ4YTllODYyYzBiNzcyYzQ4NDc3YjA2YzE5MTQ1YzRhNjczYWEyNCJ9fX0=
+        stack: 1
+        name: '#fcb605Minero' # Minero
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Miner%&7/&a%jobsr_maxlvl_Miner%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Miner%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Minerales mineros y minerales.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join miner
+        - right= op= jobs leave miner
+        - left= cpc
+      '12':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzYTM2MzM2OGVkMWUwNmNlZTM5MDA3MTdmMDYyZTAyZWMzOWFlZTE3NDc2NzUzOTIyNTViNDhmN2Y4MzYwMCJ9fX0=
+        stack: 1
+        name: '#80ffffPescador' 
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_fisherman%&7/&a%jobsr_maxlvl_fisherman%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_fisherman%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Atrapando todo tipo de peces.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join fisherman
+        - right= op= jobs leave fisherman
+        - left= cpc
+      '13':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVhMGIwN2UzNmVhZmRlY2YwNTljOGNiMTM0YTdiZjBhMTY3ZjkwMDk2NmYxMDk5MjUyZDkwMzI3NjQ2MWNjZSJ9fX0=
+        stack: 1
+        name: '#fef1bcAgricultor' # Agricultora 
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_farmer%&7/&a%jobsr_maxlvl_farmer%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_farmer%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Cuidando tu granja.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join farmer
+        - right= op= jobs leave farmer
+        - left= cpc
+      '14':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDViYTkxNDBhMWMzZDVkOWE4YzBkYzM3NTAwN2QwYjgyYmFiZDhkYWNlYmFmOWI1ZTRmZTliNmM4ZjViNDlkZCJ9fX0= # eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDViYTkxNDBhMWMzZDVkOWE4YzBkYzM3NTAwN2QwYjgyYmFiZDhkYWNlYmFmOWI1ZTRmZTliNmM4ZjViNDlkZCJ9fX0=
+        stack: 1
+        name: '#ef6905Leñador' # Leñador
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Woodcutter%&7/&a%jobsr_maxlvl_Woodcutter%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Woodcutter%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Cortando árboles.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join woodcutter
+        - right= op= jobs leave woodcutter
+        - left= cpc
+      '15':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBlNWE0NjFjNDhlYTlmMGJhZTRhZGQ4MTJmZWZkZmY3ZDY2YzdmZGIxN2NhYzE4NWYzNjRmOTIxYmVlMjA4ZCJ9fX0=
+        stack: 1
+        name: '#fc00ebCazador' # Cazador
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Hunter%&7/&a%jobsr_maxlvl_Hunter%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Hunter%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Animales y monstruos de caza.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join hunter
+        - right= op= jobs leave hunter
+        - left= cpc
+      '20':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBiYmVmMGE0YmNmMDNlMDQ5ZDU1NmRhMGJlZDZiNDFkZDkyOGI4OTdhNDJhZTAxZWZlYTY4NGI1NjFjNDMyZiJ9fX0=
+        stack: 1
+        name: '#d3fc05Constructor' # Constructor
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Builder%&7/&a%jobsr_maxlvl_Builder%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Builder%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Estructuras de construcción.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join Builder
+        - right= op= jobs leave Builder
+        - left= cpc
+      '21':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNlNjYwNDE1N2ZjNGFiNTU5MWU0YmNmNTA3YTc0OTkxOGVlOWM0MWUzNTdkNDczNzZlMGVlNzM0MjA3NGM5MCJ9fX0=
+        stack: 1
+        name: '#5305fcEncantador' # Encantador
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Enchanter%&7/&a%jobsr_maxlvl_Enchanter%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Enchanter%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Artículos encantadores.'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join Enchanter
+        - right= op= jobs leave Enchanter
+        - left= cpc
+      '22':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYyYzIzOTMzNmEyNjUyYWVlMzc3ZjQ2ODI0YjgwZWUxYzZiZTE4OTgyYzBmYzUzMGZlOGJkYWE5ZDY3YWRhZSJ9fX0=
+        stack: 1
+        name: '#05fcf0Explorador' # Explorador
+        lore:
+        - '&a ♢ &8Level: &a%jobsr_user_jlevel_Explorer%&7/&a%jobsr_maxlvl_Explorer%'
+        - '&a ♢ &8Players: &a%jobsr_totalplayers_Explorer%'
+        - ''
+        - '&8&m-----'
+        - '&7Ganar dinero con'
+        - '&7Explorando el mundo'
+        - '&8&m---------------'
+        - '#FF9B00■ Haga clic derecho para seleccionar el trabajo.'
+        - '#f76700■ Haga clic izquierdo para dejar el trabajo.'
+        commands:
+        - sound= UI_BUTTON_CLICK
+        - left= op= jobs join Explorer
+        - right= op= jobs leave Explorer
+        - left= cpc
+      '38':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '39':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''

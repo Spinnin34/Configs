@@ -1,0 +1,31 @@
+panels:
+  spawnpoint_menu_invisible:
+    disabled-worlds:
+    - Spawn
+    - resource_world
+    - the_end
+    - world_nether
+    perm: default
+    commands-on-open:
+    - 'add-data= played_survival false %cp-player-name%'
+    - 'set-data= played_survival true %cp-player-name%'
+    - 'delay= 20 op= spawnpoint %cp-player-name%'
+    - 'cpc'
+    rows: 1
+    title: 'Do not touch'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+
+    ###################################
+###########################################
+############## SuperG Setups ##############
+################## 2022 ###################
+###########################################
+####### Official Discord Support ##########
+### { https://discord.io/supergsetups } ###
+ #########################################
+    ###################################

@@ -1,0 +1,61 @@
+panels:
+  guides_menu_protection:
+    perm: default
+    rows: 4
+    title: '&fGuides - Menus'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: BEACON
+        stack: 1
+        name: '&7How to protect'
+        lore:
+        - ''
+        - '&fIn order to protect yourself and'
+        - '&fYour base from other players you'
+        - '&fWill need a protection. You can get'
+        - '&fA protection stone from the store and'
+        - '&fSecure yourself and your loot.'
+        - ''
+      '1':
+        material: BEACON
+        stack: 1
+        name: '&7Protection Stone Commands'
+        lore:
+        - ''
+        - '&fYou can see all of the commands'
+        - '&fthat you need when you type /ps help'
+        - ''
+      '20':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '21':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '22':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' ' 
+      '23':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '24':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ' '
+      '31':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M1Yjk1NDJjYTQ2YjAwMjM1ZDNkZGRhZGEwMjk5M2JjNGQyZjdlNjNhNWJmNDViMDRhZTZlNzI1OWM3M2U0OCJ9fX0= # Close
+        stack: 1
+        name: '#FFB900↓ #474747| #fc4b00R#fc5c00e#fc7500t#fc8f00u#fca400r#fcb400n'
+        lore:
+        - '&8------'
+        - '&7Go Back.'
+        - '&8------'
+        - ''
+        - '#FF9B00■ Right-Click to open the menu.'
+        commands:
+        - open= guides_menu
+        - sound= UI_BUTTON_CLICK

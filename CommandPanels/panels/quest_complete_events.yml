@@ -1,0 +1,15 @@
+panels:
+  quest_complete_events:
+    perm: quests.auto.select
+    rows: 1
+    commands-on-open:
+    - 'delay= 40 player.quest.random'
+    - 'console= summon firework_rocket %cp-player-x% %cp-player-y% %cp-player-z% {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:0,Explosions:[{Type:1,Flicker:1b,Colors:[I;4312372],FadeColors:[I;14602026]}]}}}}'
+    - 'cpc'
+    title: '&cError Generated. Please close this GUI'
+    empty: AIR
+    item:
+      '0':
+        material: AIR
+        stack: 1
+        name: ''
